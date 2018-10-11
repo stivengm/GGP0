@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 // import { NotFoundComponent } from './not-found/not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFundComponent } from './not-fund/not-fund.component';
+import { ChampsComponent } from './champs/champs.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -18,7 +19,8 @@ import { NotFundComponent } from './not-fund/not-fund.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    NotFundComponent
+    NotFundComponent,
+    ChampsComponent
   ],
   imports: [
     BrowserModule,
