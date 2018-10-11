@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 // import { ProductModule } from './product/product.module';
 // import { NotFoundComponent } from './not-found/not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotFundComponent } from './not-fund/not-fund.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    NotFundComponent
   ],
   imports: [
     BrowserModule,

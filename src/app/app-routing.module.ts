@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { NotFoundComponent } from './not-found/not-found.component';
+import { NotFundComponent } from './not-fund/not-fund.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
@@ -9,12 +9,12 @@ const routes: Routes = [
     pathMatch: 'full',
     component: DashboardComponent,
     children: []
+  },
+  {
+    path: '**',
+    component: NotFundComponent,
+    pathMatch: 'full'
   }
-//   {
-//     path: '**',
-//     // component: NotFoundComponent,
-//     pathMatch: 'full'
-//   }
 ];
 
 @NgModule({
