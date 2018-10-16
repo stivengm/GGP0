@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataProfileService } from './data-profile.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GG';
+
+  constructor (private dataProfileService: DataProfileService) {}
+
+  posts = {};
+
 }

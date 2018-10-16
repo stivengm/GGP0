@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// Services
+import { DataProfileService } from './data-profile.service';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { ExamModule } from './exam/exam.module';
@@ -12,6 +16,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFundComponent } from './not-fund/not-fund.component';
 import { ChampsComponent } from './champs/champs.component';
+import { FooterComponent } from './header/footer/footer.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -20,19 +25,21 @@ import { ChampsComponent } from './champs/champs.component';
     AppComponent,
     DashboardComponent,
     NotFundComponent,
-    ChampsComponent
+    ChampsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     // ProductRoutingModule,
     // ExamModule,
     // ProductModule,
     // the root routing module must on the end of this array
     AppRoutingModule
   ],
-  // providers: [NotFoundService],
+  providers: [DataProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
