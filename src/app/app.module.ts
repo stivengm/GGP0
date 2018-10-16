@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFundComponent } from './not-fund/not-fund.component';
 import { ChampsComponent } from './champs/champs.component';
 import { FooterComponent } from './header/footer/footer.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -26,7 +27,8 @@ import { FooterComponent } from './header/footer/footer.component';
     DashboardComponent,
     NotFundComponent,
     ChampsComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
