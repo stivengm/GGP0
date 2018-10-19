@@ -19,6 +19,7 @@ import { ChampsComponent } from './components/champs/champs.component';
 import { FooterComponent } from './header/footer/footer.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AboutComponent } from './components/about/about.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -30,7 +31,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     ChampsComponent,
     FooterComponent,
     NavbarComponent,
-    ProfileComponent
+    ProfileComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

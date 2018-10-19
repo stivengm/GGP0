@@ -4,11 +4,18 @@ import { NotFundComponent } from './components/not-fund/not-fund.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ChampsComponent } from './components/champs/champs.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    pathMatch: 'full'
   },
   {
     path: 'champions',
