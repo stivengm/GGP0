@@ -1,0 +1,16 @@
+.titleProfile {
+    font-size: 18px;
+    font-weight: 500;
+}
+.profileLvL {
+    font-size: 21px;
+}
+p {
+    background-image: none;
+}
+.league {
+    background-image: url('../../../assets/images/icon_izn.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: fixed;
+}
