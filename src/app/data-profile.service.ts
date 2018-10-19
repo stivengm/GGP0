@@ -8,14 +8,14 @@ import { from } from 'rxjs';
 })
 export class DataProfileService {
 
-  key = 'RGAPI-1e3dc4ef-bb80-4253-a368-6c0a51a31339';
+  key = 'RGAPI-05f1f720-6554-4f3e-a25d-4f0007431e12';
 
   constructor(private httpClient: HttpClient) {
     console.log("Se cosumirá un servicio.");
   }
 
   getData() {
-    return this.httpClient.get('https://la1.api.riotgames.com/lol/summoner/v3/summoners/by-name/XGameGamePlay0X?api_key='+ this.key);
+    return this.httpClient.get<{Post}>('https://la1.api.riotgames.com/lol/summoner/v3/summoners/by-name/XGameGamePlay0X?api_key='+ this.key);
   }
 
 }

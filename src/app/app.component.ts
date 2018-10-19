@@ -8,9 +8,14 @@ import { DataProfileService } from './data-profile.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GG';
+  title = 'GGO0';
 
-  constructor (private dataProfileService: DataProfileService) {}
+  constructor (private dataProfileService: DataProfileService) {
+    this.dataProfileService.getData().subscribe(data => {
+      data
+      // console.log(data);
+    });
+  }
 
   posts = {};
 
