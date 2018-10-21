@@ -8,14 +8,14 @@ import { from } from 'rxjs';
 })
 export class DataProfileService {
 
-  key = 'RGAPI-05f1f720-6554-4f3e-a25d-4f0007431e12';
+  key = 'RGAPI-7443ce23-81a8-436b-9bf4-04988f09fc74';
 
   constructor(private httpClient: HttpClient) {
-    console.log("Se cosumirá un servicio.");
+    // console.log("Se cosumirá un servicio.");
   }
 
   getData() {
-    return this.httpClient.get<{Post}>('https://la1.api.riotgames.com/lol/summoner/v3/summoners/by-name/XGameGamePlay0X?api_key='+ this.key);
+    return this.httpClient.get<{Post}>('http://www.lolskill.net/summoner/LAN/XGameGamePlay0X/champions/champion-masteries');
   }
 
 }

@@ -43,9 +43,95 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
+    // BRONZE
+    if (this.dataProfileSoloQ.tier == 'BRONZE') {
+      if (this.dataProfileSoloQ.rank == 'I') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/bronze_1.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'II') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/bronze_2.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'III') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/bronze_3.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'IV') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/bronze_4.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'V') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/bronze_5.png';
+      }
+    }
+    // SILVER!
+    if (this.dataProfileSoloQ.tier == 'SILVER') {
+      if (this.dataProfileSoloQ.rank == 'I') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_1.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'II') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_2.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'III') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_3.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'IV') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_4.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'V') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_5.png';
+      }
+    }
+    // GOLD!
     if (this.dataProfileSoloQ.tier == 'GOLD') {
-      this.classImageHTML = 'gold';
+      if (this.dataProfileSoloQ.rank == 'I') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_1.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'II') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_2.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'III') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_3.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'IV') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_4.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'V') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_5.png';
+      }
+    }
+    // PLATINUM 
+    if (this.dataProfileSoloQ.tier == 'PLATINUM') {
+      if (this.dataProfileSoloQ.rank == 'I') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/platinum_1.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'II') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/platinum_2.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'III') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/platinum_3.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'IV') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/platinum_4.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'V') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/platinum_5.png';
+      }
+    }
+    // DIAMOND
+    if (this.dataProfileSoloQ.tier == 'DIAMOND') {
+      if (this.dataProfileSoloQ.rank == 'I') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/diamond_1.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'II') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/diamond_2.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'III') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/diamond_3.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'IV') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/diamond_4.png';
+      }
+      if (this.dataProfileSoloQ.rank == 'V') {
+        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/diamond_5.png';
+      }
     }
   }
-
 }

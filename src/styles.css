@@ -8,3 +8,17 @@ body {
     text-align: center;
     width: 100%;
 }
+
+/* Buttons */
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #ececec;
+}
+.btn-outline-success:hover, .btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #343a40;
+    background-color: #ffffff;
+    border-color: #343a40;
+}
+.btn-outline-success.focus, .btn-outline-success:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .btn-outline-success:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(236, 236, 236);
+}

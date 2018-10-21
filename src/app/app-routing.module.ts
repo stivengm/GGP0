@@ -24,10 +24,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    // redirectTo: '/dashboard',
     pathMatch: 'full',
     component: DashboardComponent,
-    // children: []
   },
   {
     path: '**',
