@@ -13,7 +13,7 @@ export class AppComponent {
   constructor (private dataProfileService: DataProfileService) {
     this.dataProfileService.getData().subscribe(data => {
       data
-      // console.log(data);
+      console.log("holamundo:" + data);
     });
   }
 

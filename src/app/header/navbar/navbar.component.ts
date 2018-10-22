@@ -12,4 +12,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchSummonerName() {
+    console.log("SearchSummoner: ");
+  }
 }

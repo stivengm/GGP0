@@ -22,7 +22,7 @@ export class ChampsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.profile);
+    // console.log(this.profile);
   }
 
 }
