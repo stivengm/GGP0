@@ -58,7 +58,7 @@ p {
     text-align: center;
     color: #eabd56;
 }
-.divisionProfile {
+.divisionProfile, .divisionFlex {
     width: 100%;
     display: block;
     position: relative;
@@ -69,7 +69,7 @@ p {
 }
 .sectionInformationProfile {
     width: 383px;
-    height: 213px;
+    height: 305px;
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -82,4 +82,10 @@ p {
     width: 107px;
     height: 89px;
     background-color: gainsboro !important;
+}
+.imgFlex {
+    width: 100px;
+    position: absolute;
+    left: 140px;
+    top: 7px;
 }
