@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { championsRoutingModule } from './components/champs/champions-routing.module';
 import { NotFundComponent } from './components/not-fund/not-fund.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
@@ -33,25 +32,19 @@ const routes: Routes = [
       {
         path: 'championsMaestry',
         component: ChampionsMaestryComponent,
-        // pathMatch: 'full'
       },
     ]
   },
-  // {
-  //   path: 'champions',
-  //   component: ChampsComponent,
-  //   pathMatch: 'full'
-  // },
   {
     path: '',
     pathMatch: 'full',
     component: DashboardComponent,
   },
-  // {
-  //   path: '**',
-  //   component: NotFundComponent,
-  //   pathMatch: 'full'
-  // },
+  {
+    path: '**',
+    component: NotFundComponent,
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
