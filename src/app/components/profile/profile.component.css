@@ -1,6 +1,7 @@
 .titleProfile {
     font-size: 18px;
     font-weight: 500;
+    margin-left: 130px;
 }
 .profileLvL {
     font-size: 21px;
@@ -13,4 +14,72 @@ p {
     background-repeat: no-repeat;
     background-color: transparent;
     background-attachment: fixed;
+}
+.marcoImageGold {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/gold.png');
+    position: absolute;
+    left: -10px;
+    top: 2px;
+    width: 120px;
+    height: 120px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+.profileIcon {
+    position: relative;
+    /* margin-top: 54px; */
+    margin-left: 20px;  
+}
+.profileImage {
+    display: block;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+.level {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -22px;
+    width: 44px;
+    height: 24px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    background: url('http://opgg-static.akamaized.net/images/site/summoner/bg-levelbox.png');
+    background-size: 100%;
+    line-height: 17px;
+    font-family: Helvetica,AppleSDGothic,"Apple SD Gothic Neo",AppleGothic,Arial,Tahoma;
+    font-size: 14px;
+    text-align: center;
+    color: #eabd56;
+}
+.divisionProfile {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.imgDivision {
+    width: 133px;
+    margin-left: 118px;
+}
+.sectionInformationProfile {
+    width: 383px;
+    height: 213px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.windsAndLosses {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 0;
+    text-align: left;
+    width: 107px;
+    height: 89px;
+    background-color: gainsboro !important;
 }

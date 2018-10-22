@@ -1,16 +1,22 @@
 <section class="sectionProfile">
   <section class="profiles">
-    <section class="sectionInformationProfile">
-      <span class="titleProfile">Perfil {{ nameProfile }}<br></span>
-      <span class="profileLvL">Nivel: {{ lvlProfile }}</span>
-      <section class="informationRank">
-        <div class="league {{ classImageHTML }}">
-          <p></p>
-        </div>
+    <section class="sectionInformationProfile shadow p-3 mb-5 bg-white rounded">
+      <section class="faceInformation">
+        <section class="profileIcon">
+          <section class="borderImage {{ classMarcoImage }}">
+            <img src="{{ img }}" class="profileImage">
+            <span class="level tip" title="Nivel">{{ profileConsumeExample.summonerLevel }}</span>
+          </section>
+        </section>
       </section>
+      <span class="titleProfile">{{ nameProfile }}<br></span>
       <section class="division">
         <section class="divisionProfile">
-          <img src="{{ classImageHTML }}">
+          <img src="{{ classImageHTML }}" class="imgDivision">
+          <section class="windsAndLosses shadow p-3 mb-5 bg-white rounded">
+            <p class="wins">Wins: {{ dataProfileSoloQ.wins }}</p>
+            <p class="losses">Losses: {{ dataProfileSoloQ.losses }}</p>
+          </section>
         </section>
       </section>
     </section>

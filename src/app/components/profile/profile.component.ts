@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  classMarcoImage = '';
   classImageHTML = '';
   nameProfile = '';
   lvlProfile: number;
-
+  img = 'http://opgg-static.akamaized.net/images/profile_icons/profileIcon1588.jpg';
 
   dataProfileSoloQ = {
     queueType: "RANKED_SOLO_5x5",
@@ -43,6 +43,12 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
+
+    // MARCO IMAGE!
+    if (this.dataProfileSoloQ.tier == 'GOLD') {
+      this.classMarcoImage = 'marcoImageGold';
+    }
+
     // BRONZE
     if (this.dataProfileSoloQ.tier == 'BRONZE') {
       if (this.dataProfileSoloQ.rank == 'I') {
