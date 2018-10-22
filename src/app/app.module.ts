@@ -20,6 +20,8 @@ import { FooterComponent } from './header/footer/footer.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AboutComponent } from './components/about/about.component';
+import { ChampionsComponent } from './components/champs/champions/champions.component';
+import { ChampionsMaestryComponent } from './components/champs/champions-maestry/champions-maestry.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -32,7 +34,9 @@ import { AboutComponent } from './components/about/about.component';
     FooterComponent,
     NavbarComponent,
     ProfileComponent,
-    AboutComponent
+    AboutComponent,
+    ChampionsComponent,
+    ChampionsMaestryComponent
   ],
   imports: [
     BrowserModule,
