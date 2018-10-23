@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChampionsMaestryComponent implements OnInit {
 
-  marcoMaestry = '';
+  marcoMaestry = 'http://static.lolskill.net/img/championmastery/border/7.png';
 
   championsMaestry = {
     championLevel: 7,

@@ -1,3 +1,8 @@
-.campMaestry {
-    
+.sectionChampionMaestry {
+    width: 93%;
+    left: 3%;
+    display: block;
+    position: relative;
+    margin-top: 1%;
+    /* height: 100vh; */
 }
