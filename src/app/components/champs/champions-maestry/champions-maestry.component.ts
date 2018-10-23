@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ChampionsMaestryComponent implements OnInit {
 
   marcoMaestry = 'http://static.lolskill.net/img/championmastery/border/7.png';
+  iconPlayer = '';
+
+  idChampions = [];
 
   championsMaestry = {
     championLevel: 7,
@@ -26,6 +29,10 @@ export class ChampionsMaestryComponent implements OnInit {
   ngOnInit() {
     if (this.championsMaestry.championLevel == 7) {
       this.marcoMaestry == 'http://static.lolskill.net/img/championmastery/border/7.png';
+      // ifMock
+      if (this.championsMaestry.championId == 67) {
+        this.iconPlayer = '';
+      }
     }
   }
 
