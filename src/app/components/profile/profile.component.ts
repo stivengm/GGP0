@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+
+  profileMMR = '';
+  urlMMR = 'http://lan.op.gg/summoner/ajax/mmr/summonerName='
+
   classMarcoImage = '';
   classImageHTML = '';
   classImageHTMLFlex = '';
@@ -59,6 +63,8 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.profileMMR + this.urlMMR + this.profileConsumeExample.name
+    console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
 

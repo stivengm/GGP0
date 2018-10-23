@@ -7,10 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Champions
-        </a>
+        <a class="nav-link dropdown-toggle cursorPoint" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Champions</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" routerLink="/champ/champions">Champions</a>
           <div class="dropdown-divider"></div>
@@ -25,8 +22,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchSummoner"
-        name="searchSummoner">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search summoner" aria-label="Search" [(ngModel)]="searchSummoner" id="searchSummoner" [(ngModel)]="searchSummoner" name="searchSummoner">
       <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchSummonerName()" type="submit">Search</button>
     </form>
   </div>

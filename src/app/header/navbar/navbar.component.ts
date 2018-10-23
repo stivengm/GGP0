@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    window.caches.delete;
   }
 
   searchSummonerName() {
-    console.log("SearchSummoner: ");
   }
 }
