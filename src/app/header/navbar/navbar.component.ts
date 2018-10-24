@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() {
+  searchKey = '';
+  searchSummoner = '';
+
+  constructor(private router: Router, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
@@ -15,5 +19,12 @@ export class NavbarComponent implements OnInit {
   }
 
   searchSummonerName() {
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        searchKey: this.searchSummoner,
+      }
+    };
+    this.router.navigate([], navigationExtras);
+    console.log("Id:" +this.searchSummoner);
   }
 }
