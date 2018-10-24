@@ -9,7 +9,7 @@ export class ProfileComponent implements OnInit {
 
   @Input() nameSummoner: any;
   searchKey = '';
-  profileMMR = '';
+  profileMMR: any;
   urlMMR = 'http://lan.op.gg/summoner/ajax/mmr/summonerName='
 
   classMarcoImage = '';

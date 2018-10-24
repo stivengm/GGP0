@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  deleteFooter = false;
   constructor() { }
 
   ngOnInit() {
+    this.deleteFooter = true;
   }
 
 }
