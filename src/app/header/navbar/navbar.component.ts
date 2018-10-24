@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
         searchKey: this.searchSummoner,
       }
     };
-    this.router.navigate([ProfileComponent], navigationExtras);
+    this.router.navigate([], navigationExtras);
     console.log("Id:" +this.searchSummoner);
   }
 }

@@ -22,7 +22,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search summoner" aria-label="Search" [(ngModel)]="searchSummoner" id="searchSummoner" [(ngModel)]="searchSummoner" name="searchSummoner">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search summoner" aria-label="Search" [(ngModel)]="searchSummoner" id="searchSummoner" [(ngModel)]="searchSummoner" name="searchSummoner" (keyup.enter)="searchSummonerName()">
       <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchSummonerName()" type="submit">Search</button>
     </form>
   </div>

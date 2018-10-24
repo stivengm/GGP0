@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProfileComponent implements OnInit {
 
   @Input() nameSummoner: any;
-
+  searchKey = '';
   profileMMR = '';
   urlMMR = 'http://lan.op.gg/summoner/ajax/mmr/summonerName='
 
@@ -67,8 +67,7 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit() {
-    
-    this.profileMMR + this.urlMMR + this.profileConsumeExample.name
+    this.profileMMR = this.urlMMR + this.profileConsumeExample.name
     console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
