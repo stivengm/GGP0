@@ -89,3 +89,31 @@ p {
     left: 140px;
     top: 7px;
 }
+
+
+/* inicio estilos MMR */
+
+.sectionMmr {
+    position: relative;
+    display: block;
+    margin-top: -22px;
+    margin-left: 38px;
+}
+.sectionInformationMmr {
+    width: 383px;
+    height: 305px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.iframeMmr {
+    width: 100%;
+    height: 100vh;
+}
+.TierRankImage{
+    position: relative;
+    display: block;
+    margin-left: 62%;
+    margin-top: -42px;
+}
+
+/* Fin estilos MMR */

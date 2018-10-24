@@ -22,3 +22,9 @@ body {
 .btn-outline-success.focus, .btn-outline-success:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .btn-outline-success:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-success.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgb(236, 236, 236);
 }
+.TierRankImage{
+    position: relative;
+    display: block;
+    margin-left: 62%;
+    margin-top: -42px;
+}

@@ -63,16 +63,15 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(document.getElementsByClassName('TierRankImage'));
     this.profileMMR + this.urlMMR + this.profileConsumeExample.name
     console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
-
     // MARCO IMAGE!
     if (this.dataProfileSoloQ.tier == 'GOLD') {
       this.classMarcoImage = 'marcoImageGold';
     }
-
     // SóloQ
     // BRONZE
     if (this.dataProfileSoloQ.tier == 'BRONZE') {
