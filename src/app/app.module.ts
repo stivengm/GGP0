@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 // Services
 import { DataProfileService } from './data-profile.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NotFundService } from './services/not-fund.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -49,7 +50,7 @@ import { ChampionsMaestryComponent } from './components/champs/champions-maestry
     // the root routing module must on the end of this array
     AppRoutingModule
   ],
-  providers: [DataProfileService],
+  providers: [DataProfileService, NotFundService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
