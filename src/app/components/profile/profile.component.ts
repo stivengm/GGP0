@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+
+  @Input() nameSummoner: any;
 
   profileMMR = '';
   urlMMR = 'http://lan.op.gg/summoner/ajax/mmr/summonerName='
@@ -60,10 +62,12 @@ export class ProfileComponent implements OnInit {
     revisionDate: 1539724335000
   }
 
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit() {
-    console.log(document.getElementsByClassName('TierRankImage'));
+    
     this.profileMMR + this.urlMMR + this.profileConsumeExample.name
     console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;
