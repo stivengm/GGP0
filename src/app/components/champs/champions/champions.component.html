@@ -3,10 +3,10 @@
     <section class="allChamps">
       <section class="champion" *ngFor="let champion of champions">
         <section class="{{ champion.championsId }}"></section>
-        <section class="aboutChampion">
-          <section class="aboutChamp">
-            <p class="textAboutChamp">{{ champion.history }}</p>
-          </section>
+        <section class="aboutChampion"> {{ champion.history }}
+          <!-- <section class="aboutChamp"> -->
+            <!-- <p class="textAboutChamp">{{ champion.history }}</p> -->
+          <!-- </section> -->
         </section>
       </section>
     </section>
