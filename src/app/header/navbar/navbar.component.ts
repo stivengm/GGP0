@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
-import { ProfileComponent } from '../../components/profile/profile.component';
+// import { ProfileComponent } from '../../components/profile/profile.component';
 
 @Component({
   selector: 'app-navbar',
@@ -26,6 +26,6 @@ export class NavbarComponent implements OnInit {
       }
     };
     this.router.navigate([], navigationExtras);
-    console.log("Id:" +this.searchSummoner);
+    // console.log("Id:" +this.searchSummoner);
   }
 }

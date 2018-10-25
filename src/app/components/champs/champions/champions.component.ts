@@ -125,7 +125,7 @@ export class ChampionsComponent implements OnInit {
     {championsId: 'twistedfate'},
     {championsId: 'twitch'},
     {championsId: 'udyr'},
-    {championsId: 'urgor'},
+    {championsId: 'urgot'},
     {championsId: 'varus'},
     {championsId: 'vayne'},
     {championsId: 'veigar'},
