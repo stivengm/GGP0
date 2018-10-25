@@ -15,3 +15,10 @@
 .champMaestryProfile {
     display: inline-flex;
 }
+
+.vayne {
+    background-image: url('http://static.lolskill.net/img/champions/64/vayne.png')
+}
+.ashe {
+    background-image: url('http://static.lolskill.net/img/champions/64/ashe.png');
+}

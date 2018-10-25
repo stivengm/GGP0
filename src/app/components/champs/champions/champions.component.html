@@ -1,3 +1,14 @@
-<p>
-  champions works!
-</p>
+<section class="champions">
+  <section class="champs shadow p-3 mb-5 bg-white rounded">
+    <section class="allChamps">
+      <section class="champion" *ngFor="let champion of champions">
+        <section class="{{ champion.championsId }}"></section>
+        <section class="aboutChampion">
+          <section class="aboutChamp">
+            <p class="textAboutChamp">{{ champion.history }}</p>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>

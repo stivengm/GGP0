@@ -10,6 +10,8 @@ export class ChampionsMaestryComponent implements OnInit {
   marcoMaestry = 'http://static.lolskill.net/img/championmastery/border/7.png';
   iconPlayer = '';
 
+  championClassBG = '';
+
   idChampions = [];
 
   championsMaestry = {
@@ -27,6 +29,15 @@ export class ChampionsMaestryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    // ifChampsId
+    if (this.championsMaestry.championId == 67) {
+      this.championClassBG = 'vayne'
+    }
+    if (this.championsMaestry.championId == 67) {
+      this.championClassBG = 'ashe'
+    }
+
     if (this.championsMaestry.championLevel == 7) {
       this.marcoMaestry == 'http://static.lolskill.net/img/championmastery/border/7.png';
       // ifMock

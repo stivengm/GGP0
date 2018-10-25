@@ -1,0 +1,509 @@
+.champs {
+    margin: 2% 2% 0 2%;
+}
+.champion{
+    width: 64px;
+    height: 64px;
+    margin-top: 27px;
+    /* display: inline-flex; */
+}
+
+/* InicioBGChampions */
+.aatrox{
+    background-image: url('http://static.lolskill.net/img/champions/64/aatrox.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.ahri{
+    background-image: url('http://static.lolskill.net/img/champions/64/ahri.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.akali{
+    background-image: url('http://static.lolskill.net/img/champions/64/akali.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.alistar{
+    background-image: url('http://static.lolskill.net/img/champions/64/alistar.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.amumu{
+    background-image: url('http://static.lolskill.net/img/champions/64/amumu.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.anivia{
+    background-image: url('http://static.lolskill.net/img/champions/64/anivia.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.annie{
+    background-image: url('http://static.lolskill.net/img/champions/64/annie.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.ashe{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/ashe.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.aurelionsol{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/aurelionsol.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.azir{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/azir.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.brand{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/brand.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.braum{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/braum.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.caitlyn{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/caitlyn.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.camile{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/camille.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.cassiopeia{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/cassiopeia.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.chogath{
+    background-image: url('http://static.lolskill.net/img/champions/64/chogath.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+ }
+.corki{
+    background-image: url('http://static.lolskill.net/img/champions/64/corki.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+ }
+.darius{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/darius.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.diana{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/diana.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.drmundo{
+    background-image: url('http://static.lolskill.net/img/champions/64/drmundo.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+ }
+.draven{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/draven.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.ekko{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/ekko.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.elise{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/elise.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.evelynn{
+    background-image: url('http://static.lolskill.net/img/champions/64/evelynn.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+ }
+.ezreal{ 
+    background-image: url('http://static.lolskill.net/img/champions/64/ezreal.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.fiddlesticks{
+    background-image: url('http://static.lolskill.net/img/champions/64/fiddlesticks.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+ }
+.fiora{
+    background-image: url('http://static.lolskill.net/img/champions/64/fiora.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+ }
+.fizz{ 
+
+}
+.galio{
+
+ }
+.gangplank{
+
+ }
+.garen{ 
+
+}
+.gnar{ 
+
+}
+.gragas{ 
+
+}
+.graves{ 
+
+}
+.hecarim{ 
+
+}
+.heimerdinger{ 
+
+}
+.illaoi{
+
+ }
+.irelia{ 
+
+}
+.ivern{ 
+
+}
+.janna{ 
+
+}
+.jarvaniv{ 
+
+}
+.jax{ 
+
+}
+.jayce{ 
+
+}
+.jhin{ 
+
+}
+.jinx{ 
+
+}
+.kaisa{ 
+
+}
+.kalista{
+
+ }
+.karma{ 
+
+}
+.karthus{
+
+ }
+.kassadin{ 
+
+}
+.katarina{
+
+ }
+.kayle{ 
+
+}
+.kayn{ 
+
+}
+.kennen{ 
+
+}
+.khazix{
+
+ }
+.kindred{
+
+ }
+.kled{ 
+
+}
+.kogmaw{ 
+
+}
+.leblanc{
+    
+ }
+.leesin{ 
+
+}
+.leona{ 
+
+}
+.lissandra{ 
+
+}
+.lucian{ 
+
+}
+.lulu{ 
+
+}
+.lux{ 
+
+}
+.malphite{ 
+
+}
+.malzahar{ 
+
+}
+.maokai{ 
+
+}
+.masteryi{ 
+
+}
+.missfortune{ 
+
+}
+.mordekaiser{ 
+
+}
+.morgana{
+
+ }
+.nami{
+
+ }
+.nasus{ 
+
+}
+.nautilus{ 
+
+}
+.nidalee{ 
+
+}
+.nocturne{ 
+
+}
+.nunu{
+
+ }
+.olaf{ 
+
+}
+.oriana{
+
+ }
+.ornn{ 
+
+}
+.pantheon{ 
+
+}
+.poppy{ 
+
+}
+.pyke{ 
+
+}
+.quinn{ 
+
+}
+.rakan{ 
+
+}
+.rammus{ 
+
+}
+.reksay{
+
+ }
+.renekton{ 
+
+}
+.rengar{ 
+
+}
+.riven{ 
+
+}
+.rumble{ 
+
+}
+.ryze{ 
+
+}
+.sejuani{ 
+
+}
+.shaco{ 
+
+}
+.shen{ 
+
+}
+.shyvana{ 
+
+}
+.singed{ 
+
+}
+.sion{ 
+
+}
+.sivir{
+
+ }
+.skarner{
+
+ }
+.sona{
+
+ }
+.soraka{ 
+
+}
+.swain{ 
+
+}
+.syndra{ 
+
+}
+.tahmkench{ 
+
+}
+.taliyah{ 
+
+}
+.talon{ 
+
+}
+.taric{ 
+
+}
+.teemo{ 
+
+}
+.thresh{ 
+
+}
+.tristana{ 
+
+}
+.trundle{ 
+
+}
+.tryndamere{ 
+
+}
+.twistedfate{ 
+
+}
+.twitch{ 
+
+}
+.udyr{ 
+
+}
+.urgor{ 
+
+}
+.varus{ 
+
+}
+.vayne{ 
+
+}
+.veigar{ 
+
+}
+.velkoz{ 
+
+}
+.vi{ 
+
+}
+.viktor{ 
+
+}
+.vladimir{ 
+
+}
+.volibear{ 
+
+}
+.warwick{ 
+
+}
+.wukong{ 
+
+}
+.xayah{ 
+
+}
+.xerath{ 
+
+}
+.xinzhao{ 
+
+}
+.yasuo{ 
+
+}
+.yoric{ 
+
+}
+.zac{ 
+
+}
+.zed{ 
+
+}
+.ziggs{ 
+
+}
+.zilean{ 
+
+}
+.zoe{ 
+
+}
+.zyra{ 
+
+}

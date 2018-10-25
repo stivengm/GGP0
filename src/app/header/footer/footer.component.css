@@ -3,6 +3,9 @@
     position: relative;
     top: 13px;
 }
+.spanFooter {
+    font-weight: bold;
+}
 /* .footer-ggp {
     position: absolute;
     text-align: center;
