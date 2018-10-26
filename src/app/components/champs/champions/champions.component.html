@@ -2,11 +2,13 @@
   <section class="champs shadow p-3 mb-5 bg-white rounded">
     <section class="allChamps">
       <section class="champion" *ngFor="let champion of champions">
-        <section class="{{ champion.championsId }}"></section>
-        <section class="aboutChampion"> {{ champion.history }}
-          <!-- <section class="aboutChamp"> -->
+        <section class="champsWithHistory">
+          <section class="{{ champion.championsId }}"></section>
+          <section class="aboutChampion"> {{ champion.history }}
+            <!-- <section class="aboutChamp"> -->
             <!-- <p class="textAboutChamp">{{ champion.history }}</p> -->
-          <!-- </section> -->
+            <!-- </section> -->
+          </section>
         </section>
       </section>
     </section>
