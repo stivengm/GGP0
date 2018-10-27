@@ -7,6 +7,11 @@
     margin-top: 27px;
     /* display: inline-flex; */
 }
+.sectionChampAndHistory {
+    background-color: gainsboro !important;
+    /* background-image: url('http://static.lolskill.net/img/skins/tablerow/Aatrox_0.jpg'); */
+}
+
 
 /* InicioBGChampions */
 .aatrox{
@@ -358,7 +363,7 @@
     height: 100%;
 }
 .leblanc{
-    background-image: url('http://static.lolskill.net/img/champions/64/leblancs.png');
+    background-image: url('http://static.lolskill.net/img/champions/64/leblanc.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -484,7 +489,7 @@
     height: 100%;
 }
 .oriana{
-    background-image: url('http://static.lolskill.net/img/champions/64/oriana.png');
+    background-image: url('http://static.lolskill.net/img/champions/64/orianna.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -532,7 +537,7 @@
     height: 100%;
 }
 .reksay{
-    background-image: url('http://static.lolskill.net/img/champions/64/reksay.png');
+    background-image: url('http://static.lolskill.net/img/champions/64/reksai.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -802,7 +807,7 @@
     height: 100%;
 }
 .yoric{ 
-    background-image: url('http://static.lolskill.net/img/champions/64/yoric.png');
+    background-image: url('http://static.lolskill.net/img/champions/64/yorick.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;

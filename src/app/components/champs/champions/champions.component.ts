@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ChampionsComponent implements OnInit {
 
   champions = [
-    {championsId: 'aatrox', history: 'Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.'},
-    {championsId: 'ahri', history: 'Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.'},
+    {championsId: 'aatrox', rolPrincipal : 'TOP', RP: '975', PI: '6300'},
+    {championsId: 'ahri', rolPrincipal : 'MID', RP: '880', PI: '4800'},
     {championsId: 'akali'},
     {championsId: 'alistar'},
     {championsId: 'amumu'},
@@ -152,6 +152,9 @@ export class ChampionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.getElementById('championIdRouter');
+    console.log('aRouter: ' + document.getElementById('championIdRouter'));
+    console.log('aClassRouter: ' + document.getElementsByClassName('championIdRouter'));
   }
 
 }

@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  sectionMmr = '';
+
   @Input() nameSummoner: any;
   searchKey = '';
   profileMMR: any;
@@ -187,4 +189,11 @@ export class ProfileComponent implements OnInit {
       }
     }
   }
+
+  mmr() {
+    this.sectionMmr = `
+    <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
+    `;
+  }
+
 }
