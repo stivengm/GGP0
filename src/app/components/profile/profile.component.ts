@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
   sectionMmr = '';
 
   @Input() nameSummoner: any;
@@ -70,7 +69,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.profileMMR = this.urlMMR + this.profileConsumeExample.name
-    console.log(this.profileMMR);
+    // console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
     // MARCO IMAGE!
@@ -191,6 +190,8 @@ export class ProfileComponent implements OnInit {
   }
 
   mmr() {
+    document.getElementById('sectionMmr');
+    console.log("Hello world: " + document.getElementById('sectionMmr'));
     this.sectionMmr = `
     <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
     `;

@@ -30,6 +30,9 @@ export class ChampionsMaestryComponent implements OnInit {
 
   ngOnInit() {
 
+
+    // Colocar For para la lista de campeones de maestría 
+
     // ifChampsId
     if (this.championsMaestry.championId == 67) {
       this.championClassBG = 'vayne'
