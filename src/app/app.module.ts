@@ -24,6 +24,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ChampionsComponent } from './components/champs/champions/champions.component';
 import { ChampionsMaestryComponent } from './components/champs/champions-maestry/champions-maestry.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -39,7 +41,9 @@ import { LoginComponent } from './components/login/login.component';
     AboutComponent,
     ChampionsComponent,
     ChampionsMaestryComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    ForgotPassComponent
   ],
   imports: [
     BrowserModule,

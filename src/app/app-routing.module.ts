@@ -8,6 +8,8 @@ import { ChampsComponent } from './components/champs/champs.component';
 import { ChampionsComponent } from './components/champs/champions/champions.component';
 import { ChampionsMaestryComponent } from './components/champs/champions-maestry/champions-maestry.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.component';
 
 
 const routes: Routes = [
@@ -19,6 +21,16 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'forgot',
+    component: ForgotPassComponent,
     pathMatch: 'full'
   },
   {
