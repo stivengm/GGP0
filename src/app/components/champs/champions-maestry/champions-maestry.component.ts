@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChampionsMaestryComponent implements OnInit {
 
-  marcoMaestry = 'http://static.lolskill.net/img/championmastery/border/7.png';
+  marcoMaestry = '';
   iconPlayer = '';
 
   championClassBG = '';
@@ -32,7 +32,7 @@ export class ChampionsMaestryComponent implements OnInit {
 
 
     // Colocar For para la lista de campeones de maestría 
-
+    
     // ifChampsId
     if (this.championsMaestry.championId == 67) {
       this.championClassBG = 'vayne'
@@ -41,13 +41,15 @@ export class ChampionsMaestryComponent implements OnInit {
       this.championClassBG = 'ashe'
     }
 
-    if (this.championsMaestry.championLevel == 7) {
-      this.marcoMaestry == 'http://static.lolskill.net/img/championmastery/border/7.png';
-      // ifMock
-      if (this.championsMaestry.championId == 67) {
-        this.iconPlayer = '';
-      }
-    }
+    this.marcoMaestry = 'http://static.lolskill.net/img/championmastery/border/'+this.championsMaestry.championLevel+'.png';
+
+    // if (this.championsMaestry.championLevel == 7) {
+    //   this.marcoMaestry == 'http://static.lolskill.net/img/championmastery/border/7.png';
+    //   // ifMock
+    //   if (this.championsMaestry.championId == 67) {
+    //     this.iconPlayer = '';
+    //   }
+    // }
   }
 
 }

@@ -1,0 +1,24 @@
+<section class="login">
+  <section class="sectionlogin shadow p-3 mb-5 bg-white rounded">
+    <section class="titleHeader">
+      <h2 class="title">{{ title }}</h2>
+      <span class="descriptionHeaderLogin">Ingrese sus credenciales para ingresar a <strong>{{ title }}</strong> y
+        poder loguearse.</span>
+    </section>
+    <form action="login" method="get">
+      <section class="formLogin">
+        <section class="formLoginAlg">
+          <input class="form-control mr-sm-2 width40" type="text" placeholder="Nombre de usuario" aria-label="Nombre de usuario"
+            id="UserName" name="UserName">
+          <input class="form-control mr-sm-2 width40" type="password" placeholder="Password" aria-label="Password" id="Password"
+            name="Password">
+        </section>
+      </section>
+      <section class="moreOptions">
+        <a class="nav-link" routerLink="/profile">¿No estás registrado?</a>
+        <a class="nav-link" routerLink="/profile">¿Olvidó su contraseña?</a>
+      </section>
+      <button class="btn btn-Login" type="submit">login</button>
+    </form>
+  </section>
+</section>

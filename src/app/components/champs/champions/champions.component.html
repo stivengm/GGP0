@@ -1,19 +1,19 @@
 <section class="champions">
   <section class="champs shadow p-3 mb-5 bg-white rounded">
     <section class="allChamps">
-      <a routerLink="" id="championIdRouter" class="championIdRouter">
+      <!-- <a routerLink="" id="championIdRouter" class="championIdRouter"> -->
         <section class="sectionChampAndHistory shadow p-3 mb-5 bg-white rounded" *ngFor="let champion of champions">
           <section class="champsWithHistory">
             <section class="champion">
               <section class="{{ champion.championsId }}"></section>
             </section>
-            <!-- <section class="aboutChampion"> {{ champion.history }}</section> -->
+            <section class="aboutChampion"> {{ champion.rolPrincipal }}</section>
             <!-- <section class="aboutChamp"> -->
             <!-- <p class="textAboutChamp">{{ champion.history }}</p> -->
             <!-- </section> -->
           </section>
         </section>
-      </a>
+      <!-- </a> -->
     </section>
   </section>
 </section>

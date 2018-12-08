@@ -23,6 +23,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AboutComponent } from './components/about/about.component';
 import { ChampionsComponent } from './components/champs/champions/champions.component';
 import { ChampionsMaestryComponent } from './components/champs/champions-maestry/champions-maestry.component';
+import { LoginComponent } from './components/login/login.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -37,7 +38,8 @@ import { ChampionsMaestryComponent } from './components/champs/champions-maestry
     ProfileComponent,
     AboutComponent,
     ChampionsComponent,
-    ChampionsMaestryComponent
+    ChampionsMaestryComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

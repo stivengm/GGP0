@@ -104,13 +104,13 @@ export class ProfileComponent implements OnInit {
         this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_2.png';
       }
       if (this.dataProfileSoloQ.rank == 'III') {
-        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_3.png';
+        this.classImageHTML = 'https://opgg-static.akamaized.net/images/medals/silver_3.png';
       }
       if (this.dataProfileSoloQ.rank == 'IV') {
-        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_4.png';
+        this.classImageHTML = 'https://opgg-static.akamaized.net/images/medals/silver_4.png';
       }
       if (this.dataProfileSoloQ.rank == 'V') {
-        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/silver_5.png';
+        this.classImageHTML = 'https://opgg-static.akamaized.net/images/medals/silver_5.png';
       }
     }
     // GOLD!
@@ -128,7 +128,7 @@ export class ProfileComponent implements OnInit {
         this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_4.png';
       }
       if (this.dataProfileSoloQ.rank == 'V') {
-        this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_5.png';
+        this.classImageHTML = 'https://opgg-static.akamaized.net/images/medals/gold_5.png';
       }
     }
     // PLATINUM 
@@ -190,11 +190,14 @@ export class ProfileComponent implements OnInit {
   }
 
   mmr() {
-    document.getElementById('sectionMmr');
-    console.log("Hello world: " + document.getElementById('sectionMmr'));
+    document.getElementById('iframeMmr').remove;
+    document.getElementById('iframeMmr').style.display = 'none';
+    // document.getElementById('sectionMmr').innerHTML = '<iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>';
+    // console.log("Hello world: " + document.getElementById('sectionMmr'));
     this.sectionMmr = `
     <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
     `;
+    // document.getElementById('sectionMmr').style
   }
 
 }

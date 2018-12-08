@@ -7,12 +7,18 @@ import { AboutComponent } from './components/about/about.component';
 import { ChampsComponent } from './components/champs/champs.component';
 import { ChampionsComponent } from './components/champs/champions/champions.component';
 import { ChampionsMaestryComponent } from './components/champs/champions-maestry/champions-maestry.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
     pathMatch: 'full'
   },
   {

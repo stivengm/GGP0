@@ -116,3 +116,10 @@ p {
 }
 
 /* Fin estilos MMR */
+
+
+/* EstilosIframeMMR */
+#iframeMmr > .js.no-localstorage > .l-wrap.l-wrap--summoner > .l-header > .header {
+    display: none;
+}
+/* FinEstilosIFRAMEMRR */

@@ -6,7 +6,7 @@
           <img src="{{ marcoMaestry }}" class="imgMarco">
           <img src="{{ championMaestry }}" class="imgChamp">
         </section>
-        <section class="campMaestry {{ ashe }}">
+        <section class="campMaestry {{ ashe }}" *ngFor="let champ of champs">
           <img src="{{ marcoMaestry }}" class="imgMarco">
           <img src="{{ championMaestry }}" class="imgChamp">
         </section>
