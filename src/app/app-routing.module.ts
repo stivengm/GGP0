@@ -14,7 +14,7 @@ import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.compon
 
 const routes: Routes = [
   {
-    path: 'profile',
+    path: 'profilelol',
     component: ProfileComponent,
     pathMatch: 'full'
   },
