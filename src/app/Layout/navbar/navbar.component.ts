@@ -9,6 +9,7 @@ import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  noNavbar = false; //DesaparecerNavbar. xdd
   searchKey = '';
   searchSummoner = '';
 
@@ -17,6 +18,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     window.caches.delete;
+    if (this.noNavbar = true) {
+      document.getElementById('navbarNav').style.display = 'none';
+    }
   }
 
   searchSummonerName() {
