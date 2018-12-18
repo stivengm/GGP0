@@ -10,7 +10,7 @@ p {
     background-image: none;
 }
 .league {
-    background-image: url('../../../assets/images/icon_izn.png');
+    /* background-image: url('../../../assets/images/icon_izn.png'); */
     background-repeat: no-repeat;
     background-color: transparent;
     background-attachment: fixed;

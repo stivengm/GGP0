@@ -18,9 +18,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     window.caches.delete;
-    if (this.noNavbar = true) {
-      document.getElementById('navbarNav').style.display = 'none';
-    }
+    // if (this.noNavbar = true) {
+    //   document.getElementById('navbarNav').style.display = 'none';
+    // }
   }
 
   searchSummonerName() {

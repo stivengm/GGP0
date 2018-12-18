@@ -1,0 +1,16 @@
+.footer {
+    .footerBot {
+        position: absolute;
+        /* bottom: 1%; */
+        text-align: center;
+        width: 100%;
+        .hrFooter {
+            display: block;
+            position: relative;
+            top: 13px;
+        }
+        .spanFooter {
+            font-weight: bold;
+        }
+    }
+}
