@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     if (this.deleteFooter = true) {
-      document.getElementById('navbarNav').style.display = 'none';
+      document.getElementById('footer').style.display = 'none';
     }
   }
 

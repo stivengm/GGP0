@@ -9,8 +9,8 @@ import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  noNavbar = false; //DesaparecerNavbar. xdd
-  searchKey = '';
+  noNavbar = false; //Desaparecer Navbar. xdd
+  // searchKey = '';
   searchSummoner = '';
 
   constructor(private router: Router, private route: ActivatedRoute) {

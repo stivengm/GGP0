@@ -9,16 +9,16 @@
       <section class="formLogin">
         <section class="formLoginAlg">
           <input class="form-control mr-sm-2 width40" type="text" placeholder="Nombre de usuario" aria-label="Nombre de usuario"
-            id="UserName" name="UserName">
+            id="UserName" name="UserName" required (keyup.enter)="Login()">
           <input class="form-control mr-sm-2 width40" type="password" placeholder="Password" aria-label="Password" id="Password"
-            name="Password">
+            name="Password" (keyup.enter)="Login()">
         </section>
       </section>
       <section class="moreOptions">
         <a class="nav-link" routerLink="/profile">¿No estás registrado?</a>
         <a class="nav-link" routerLink="/profile">¿Olvidó su contraseña?</a>
       </section>
-      <button class="btn btn-Login" type="submit">login</button>
+      <button class="btn btn-Login" type="submit" (click)="Login()">login</button>
     </form>
   </section>
 </section>
