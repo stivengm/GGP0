@@ -1,21 +1,25 @@
 .notFoundPage {
     .notfound {
-        .titleNotFound {
-            text-align: center;
-        }
-        .notFoundPageBot {
-            text-align: center;
-        }
         .sectionNotFound {
             .notFound {
+                display: inline-flex;
+                width: 100%;
+                margin-top: 5%;
                 .imagenNotFound {
                     /* background-image:url("chrome://browser/content/illustrations/error-server-not-found.svg"); */
                     background-image:url("../../../assets/images/bgNotfound/bgNotfound.PNG");
                     width: 209px;
                     height: 223px;
                     background-repeat: no-repeat;
-                    margin-left: 45%;
+                    margin-left: 30%;
                     position: relative;
+                }
+                .titleNotFound {
+                    width: 358px;
+                    .titleFound {
+                        font-size: 6rem;
+                        text-align: center;
+                    }
                 }
             }
         }
