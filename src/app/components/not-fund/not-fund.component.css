@@ -1,7 +1,0 @@
-.imagenNotFound {
-    /* background-image:url("chrome://browser/content/illustrations/error-server-not-found.svg"); */
-    background-image:url("../../../assets/images/bgNotfound/bgNotfound.PNG");
-    width: 209px;
-    height: 223px;
-    background-repeat: no-repeat;
-}
