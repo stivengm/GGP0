@@ -1,46 +1,62 @@
 <section class="sectionProfile">
   <section class="profiles">
-    <section class="sectionInformationProfile shadow p-3 mb-5 bg-white rounded">
-      <section class="faceInformation">
-        <section class="profileIcon">
-          <section class="borderImage {{ classMarcoImage }}">
-            <img src="{{ img }}" class="profileImage">
-            <span class="level tip" title="Nivel">{{ profileConsumeExample.summonerLevel }}</span>
+    <section class="profileAndHistory">
+      <section class="sectionInformationProfile shadow p-3 mb-5 bg-white rounded">
+        <section class="faceInformation">
+          <section class="profileIcon">
+            <section class="borderImage {{ classMarcoImage }}">
+              <img src="{{ img }}" class="profileImage">
+              <span class="level tip" title="Nivel">{{ profileConsumeExample.summonerLevel }}</span>
+            </section>
+          </section>
+        </section>
+        <span class="titleProfile">{{ nameProfile }}<br></span>
+        <section class="division">
+          <section class="divisionProfile">
+            <img src="{{ classImageHTML }}" class="imgDivision">
+            <section class="windsAndLosses shadow p-3 mb-5 bg-white rounded">
+              <p class="wins">Wins: {{ dataProfileSoloQ.wins }}</p>
+              <p class="losses">Losses: {{ dataProfileSoloQ.losses }}</p>
+            </section>
+          </section>
+        </section>
+        <section class="flex">
+          <section class="divisionFlex">
+            <img class="imgFlex" src="{{ classImageHTMLFlex }} " alt="">
+            <section class="windsAndLosses shadow p-3 mb-5 bg-white rounded">
+              <p class="wins">Wins: {{ dataProfileFlex.wins }}</p>
+              <p class="losses">Losses: {{ dataProfileFlex.losses }}</p>
+            </section>
+          </section>
+        </section>
+        <section class="sectionMmr">
+          <section class="mmr">
+            <button type="button" class="btn btn-dark" (click)="mmr()" onclick="myFunction()">MMR</button>
+            <!-- <button type="button" routerLink="champ/championsMaestry" class="btn btn-dark">Champions maestry</button> -->
+          </section>
+        </section>
+        <section class="sectionHistory">
+          <section class="history">
+            <button type="button" class="btn btn-light" (click)="history()">History</button>
           </section>
         </section>
       </section>
-      <span class="titleProfile">{{ nameProfile }}<br></span>
-      <section class="division">
-        <section class="divisionProfile">
-          <img src="{{ classImageHTML }}" class="imgDivision">
-          <section class="windsAndLosses shadow p-3 mb-5 bg-white rounded">
-            <p class="wins">Wins: {{ dataProfileSoloQ.wins }}</p>
-            <p class="losses">Losses: {{ dataProfileSoloQ.losses }}</p>
+      <section class="sectionInformationHistory shadow p-3 mb-5 bg-white rounded" id="sectionHistory" *ngIf="sectionHistory">
+        <section class="history">
+          <section class="viewHistory">
+            <!-- {{ sectionMmr }} -->
+            <!-- <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe> -->
+            <iframe id="iframeHistory" src="http://lan.op.gg/summoner/userName=XGameGamePlay0X" frameborder="0"></iframe>
           </section>
-        </section>
-      </section>
-      <section class="flex">
-        <section class="divisionFlex">
-          <img class="imgFlex" src="{{ classImageHTMLFlex }} " alt="">
-          <section class="windsAndLosses shadow p-3 mb-5 bg-white rounded">
-            <p class="wins">Wins: {{ dataProfileFlex.wins }}</p>
-            <p class="losses">Losses: {{ dataProfileFlex.losses }}</p>
-          </section>
-        </section>
-      </section>
-      <section class="sectionMmr">
-        <section class="mmr">
-          <button type="button" class="btn btn-dark" (click)="mmr()">MMR</button>
-          <!-- <button type="button" routerLink="champ/championsMaestry" class="btn btn-dark">Champions maestry</button> -->
         </section>
       </section>
     </section>
     <section class="sectionInformationMmr shadow p-3 mb-5 bg-white rounded" id="sectionMmr" *ngIf="sectionMmr">
       <section class="mmr">
         <section class="viewMmr">
-          {{ sectionMmr }}
+          <!-- {{ sectionMmr }} -->
           <!-- <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe> -->
-          <iframe id="iframeMmr" src="http://lan.op.gg/summoner/userName=XGameGamePlay0X" style="width: 100%" frameborder="0"></iframe>
+          <iframe id="iframeMmr" src="http://lan.op.gg/summoner/userName=XGameGamePlay0X" frameborder="0"></iframe>
         </section>
       </section>
     </section>

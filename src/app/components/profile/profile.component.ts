@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { element } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-profile',
@@ -7,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   sectionMmr = '';
+  sectionHistory = '';
+  testDeleteClass: any;
 
   @Input() nameSummoner: any;
   searchKey = '';
@@ -189,15 +192,24 @@ export class ProfileComponent implements OnInit {
     }
   }
 
+  history() {
+    this.sectionHistory = 'Hola mundo';
+  }
+
   mmr() {
-    document.getElementById('iframeMmr').remove;
-    document.getElementById('iframeMmr').style.display = 'none';
+    // document.getElementById('iframeMmr').remove;
+    // document.getElementById('iframeMmr').style.display = 'none';
     // document.getElementById('sectionMmr').innerHTML = '<iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>';
     // console.log("Hello world: " + document.getElementById('sectionMmr'));
     this.sectionMmr = `
     <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
     `;
     // document.getElementById('sectionMmr').style
+    this.testDeleteClass = document.getElementsByClassName("l-header");
+    document.getElementById("iframeMmr").removeAttribute("l-header");
+    console.log("Se eliminará esto: "+this.testDeleteClass);
+    console.log("test: "+ document.getElementsByClassName("l-header"));
+    console.log("iframe: "+ document.getElementById("iframeMmr"));
   }
 
 }

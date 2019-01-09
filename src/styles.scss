@@ -2,7 +2,7 @@
 body {
     /* background-color: #ececec; */
     background-color: #F9F9FA;
-    background-image: url('./assets/images/bg.jpg');
+    // background-image: url('./assets/images/bg.jpg');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,4 +26,7 @@ body {
     display: block;
     margin-left: 62%;
     margin-top: -42px;
+}
+.dispNone {
+    display: none;
 }
