@@ -4,8 +4,8 @@
       <section class="sectionInformationProfile shadow p-3 mb-5 bg-white rounded">
         <section class="faceInformation">
           <section class="profileIcon">
-            <section class="borderImage {{ classMarcoImage }}">
-              <img src="{{ img }}" class="profileImage">
+            <section class="borderImage marcoDesignGeneral {{ classMarcoImage }}">
+              <img src="{{ imgProfile }}" class="profileImage">
               <span class="level tip" title="Nivel">{{ profileConsumeExample.summonerLevel }}</span>
             </section>
           </section>
@@ -44,8 +44,6 @@
       <section class="sectionInformationHistory shadow p-3 mb-5 bg-white rounded" id="sectionHistory" *ngIf="sectionHistory">
         <section class="history">
           <section class="viewHistory">
-            <!-- {{ sectionMmr }} -->
-            <!-- <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe> -->
             <iframe id="iframeHistory" src="http://lan.op.gg/summoner/userName=XGameGamePlay0X" frameborder="0"></iframe>
           </section>
         </section>
@@ -56,7 +54,8 @@
         <section class="viewMmr">
           <!-- {{ sectionMmr }} -->
           <!-- <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe> -->
-          <iframe id="iframeMmr" src="http://lan.op.gg/summoner/userName=XGameGamePlay0X" frameborder="0"></iframe>
+          <!-- <iframe id="iframeMmr" src="http://lan.op.gg/summoner/ajax/mmr/summonerName=Dissentient" frameborder="0"></iframe> -->
+          <object type="text/html" id="sectionMmr" data="http://www.lapaginaquesea.com" width="100%" height="100%"> </object>
         </section>
       </section>
     </section>

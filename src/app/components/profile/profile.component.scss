@@ -130,7 +130,8 @@
         .sectionInformationMmr {
             width: 383px;
             height: 305px;
-            margin-top: 30px;
+            // margin-top: 30px;
+            margin-top: 0;
             margin-left: 30px;
             .mmr {
                 .viewMmr {
@@ -155,8 +156,7 @@ p {
     background-color: transparent;
     background-attachment: fixed;
 }
-.marcoImageGold {
-    background-image: url('http://opgg-static.akamaized.net/images/borders2/gold.png');
+.marcoDesignGeneral {
     position: absolute;
     left: -10px;
     top: 2px;
@@ -165,6 +165,18 @@ p {
     background-position: center bottom;
     background-repeat: no-repeat;
     z-index: 99;
+}
+.marcoImageBronze {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/bronze.png');
+}
+.marcoImageSilver {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/silver.png');
+}
+.marcoImageGold {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/gold.png');
+}
+.marcoImagePlatinum {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/platinum.png');
 }
 .TierRankImage{
     position: relative;
@@ -178,3 +190,17 @@ p {
     display: none !important;
 }
 // Fin Estilos MMR
+
+// Inicio Estilos MMR2
+
+#iframeMmr {
+    .MMRBox {
+        .Alert {
+            font-size: 3px;
+        }
+    }
+}
+.listasCabecera {
+    list-style-image: none;
+}
+// Fin Estilos MMR2

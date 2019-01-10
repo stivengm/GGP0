@@ -11,6 +11,10 @@ export class ProfileComponent implements OnInit {
   sectionHistory = '';
   testDeleteClass: any;
 
+  testMarginMMR = 0;
+
+  bgMarco = ''
+
   @Input() nameSummoner: any;
   searchKey = '';
   profileMMR: any;
@@ -21,7 +25,7 @@ export class ProfileComponent implements OnInit {
   classImageHTMLFlex = '';
   nameProfile = '';
   lvlProfile: number;
-  img = 'http://opgg-static.akamaized.net/images/profile_icons/profileIcon1588.jpg';
+  imgProfile = 'http://opgg-static.akamaized.net/images/profile_icons/profileIcon1588.jpg';
 
   dataProfileSoloQ = {
     queueType: "RANKED_SOLO_5x5",
@@ -60,7 +64,7 @@ export class ProfileComponent implements OnInit {
   profileConsumeExample = {
     profileIconId: 1588,
     name: "XGameGamePlay0X",
-    summonerLevel: 99,
+    summonerLevel: 105,
     accountId: 202220047,
     id: 7643235,
     revisionDate: 1539724335000
@@ -76,8 +80,14 @@ export class ProfileComponent implements OnInit {
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
     // MARCO IMAGE!
+    if (this.dataProfileSoloQ.tier == 'SILVER') {
+      this.classMarcoImage = 'marcoImageSilver';
+    }
     if (this.dataProfileSoloQ.tier == 'GOLD') {
       this.classMarcoImage = 'marcoImageGold';
+    }
+    if (this.dataProfileSoloQ.tier == 'PLATINUM') {
+      this.classMarcoImage = 'marcoImagePlatinum';
     }
     // SóloQ
     // BRONZE
@@ -118,6 +128,7 @@ export class ProfileComponent implements OnInit {
     }
     // GOLD!
     if (this.dataProfileSoloQ.tier == 'GOLD') {
+      this.bgMarco = "background-image: url('http://opgg-static.akamaized.net/images/borders2/gold.png');";
       if (this.dataProfileSoloQ.rank == 'I') {
         this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_1.png';
       }
@@ -193,10 +204,19 @@ export class ProfileComponent implements OnInit {
   }
 
   history() {
+    this.testMarginMMR = 1;
     this.sectionHistory = 'Hola mundo';
+    if (this.testMarginMMR == 1) {
+      document.getElementById("sectionMmr").style.position = 'relative';
+      document.getElementById("sectionMmr").style.marginTop = '-105px';
+    }
   }
 
   mmr() {
+    if (this.testMarginMMR == 1) {
+      document.getElementById("sectionMmr").style.position = 'relative';
+      document.getElementById("sectionMmr").style.marginTop = '-105px';
+    }
     // document.getElementById('iframeMmr').remove;
     // document.getElementById('iframeMmr').style.display = 'none';
     // document.getElementById('sectionMmr').innerHTML = '<iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>';
@@ -204,12 +224,8 @@ export class ProfileComponent implements OnInit {
     this.sectionMmr = `
     <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
     `;
-    // document.getElementById('sectionMmr').style
-    this.testDeleteClass = document.getElementsByClassName("l-header");
-    document.getElementById("iframeMmr").removeAttribute("l-header");
-    console.log("Se eliminará esto: "+this.testDeleteClass);
-    console.log("test: "+ document.getElementsByClassName("l-header"));
-    console.log("iframe: "+ document.getElementById("iframeMmr"));
+    var elemento = document.getElementById("introduccion");
+    elemento.className += 'helloWorld';
   }
 
 }
