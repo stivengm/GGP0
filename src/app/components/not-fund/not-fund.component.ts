@@ -19,6 +19,7 @@ export class NotFundComponent implements OnInit {
     this.deleteNavBar = true;
     document.getElementById("body").style.backgroundImage = 'none';
     document.getElementById("footer").style.display = 'none';
+    document.getElementById("navbarNav").style.display = 'none';
   }
 
   // ngOnDestroy() {

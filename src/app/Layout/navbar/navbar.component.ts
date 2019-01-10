@@ -8,7 +8,6 @@ import { ProfileComponent } from '../../components/profile/profile.component';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
   noNavbar = false; //Desaparecer Navbar. xdd
   // searchKey = '';
   searchSummoner = '';

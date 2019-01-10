@@ -9,7 +9,7 @@ import { NotFundService } from './services/not-fund.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GGO0';
+  title = 'GGP0';
   isNotfound = false;
 
   constructor (//private dataProfileService: DataProfileService,
@@ -21,7 +21,6 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    
   }
 
   posts = {};
