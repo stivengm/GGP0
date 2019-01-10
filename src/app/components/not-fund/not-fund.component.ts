@@ -4,7 +4,7 @@ import { NotFundService } from '../../services/not-fund.service';
 @Component({
   selector: 'app-not-fund',
   templateUrl: './not-fund.component.html',
-  styleUrls: ['./not-fund.component.css']
+  styleUrls: ['./not-fund.component.scss']
 })
 export class NotFundComponent implements OnInit {
 
@@ -17,6 +17,8 @@ export class NotFundComponent implements OnInit {
     // this.nfService.emit(true);
     this.urlNotFound = window.location
     this.deleteNavBar = true;
+    document.getElementById("body").style.backgroundImage = 'none';
+    document.getElementById("footer").style.display = 'none';
   }
 
   // ngOnDestroy() {

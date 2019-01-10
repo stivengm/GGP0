@@ -1,12 +1,19 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { element } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
   sectionMmr = '';
+  sectionHistory = '';
+  testDeleteClass: any;
+
+  testMarginMMR = 0;
+
+  bgMarco = ''
 
   @Input() nameSummoner: any;
   searchKey = '';
@@ -18,7 +25,7 @@ export class ProfileComponent implements OnInit {
   classImageHTMLFlex = '';
   nameProfile = '';
   lvlProfile: number;
-  img = 'http://opgg-static.akamaized.net/images/profile_icons/profileIcon1588.jpg';
+  imgProfile = 'http://opgg-static.akamaized.net/images/profile_icons/profileIcon1588.jpg';
 
   dataProfileSoloQ = {
     queueType: "RANKED_SOLO_5x5",
@@ -57,7 +64,7 @@ export class ProfileComponent implements OnInit {
   profileConsumeExample = {
     profileIconId: 1588,
     name: "XGameGamePlay0X",
-    summonerLevel: 99,
+    summonerLevel: 105,
     accountId: 202220047,
     id: 7643235,
     revisionDate: 1539724335000
@@ -73,8 +80,14 @@ export class ProfileComponent implements OnInit {
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
     // MARCO IMAGE!
+    if (this.dataProfileSoloQ.tier == 'SILVER') {
+      this.classMarcoImage = 'marcoImageSilver';
+    }
     if (this.dataProfileSoloQ.tier == 'GOLD') {
       this.classMarcoImage = 'marcoImageGold';
+    }
+    if (this.dataProfileSoloQ.tier == 'PLATINUM') {
+      this.classMarcoImage = 'marcoImagePlatinum';
     }
     // SóloQ
     // BRONZE
@@ -115,6 +128,7 @@ export class ProfileComponent implements OnInit {
     }
     // GOLD!
     if (this.dataProfileSoloQ.tier == 'GOLD') {
+      this.bgMarco = "background-image: url('http://opgg-static.akamaized.net/images/borders2/gold.png');";
       if (this.dataProfileSoloQ.rank == 'I') {
         this.classImageHTML = 'http://opgg-static.akamaized.net/images/medals/gold_1.png';
       }
@@ -189,15 +203,29 @@ export class ProfileComponent implements OnInit {
     }
   }
 
+  history() {
+    this.testMarginMMR = 1;
+    this.sectionHistory = 'Hola mundo';
+    if (this.testMarginMMR == 1) {
+      document.getElementById("sectionMmr").style.position = 'relative';
+      document.getElementById("sectionMmr").style.marginTop = '-105px';
+    }
+  }
+
   mmr() {
-    document.getElementById('iframeMmr').remove;
-    document.getElementById('iframeMmr').style.display = 'none';
+    if (this.testMarginMMR == 1) {
+      document.getElementById("sectionMmr").style.position = 'relative';
+      document.getElementById("sectionMmr").style.marginTop = '-105px';
+    }
+    // document.getElementById('iframeMmr').remove;
+    // document.getElementById('iframeMmr').style.display = 'none';
     // document.getElementById('sectionMmr').innerHTML = '<iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>';
     // console.log("Hello world: " + document.getElementById('sectionMmr'));
     this.sectionMmr = `
     <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
     `;
-    // document.getElementById('sectionMmr').style
+    var elemento = document.getElementById("introduccion");
+    elemento.className += 'helloWorld';
   }
 
 }

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-champions-maestry',
   templateUrl: './champions-maestry.component.html',
-  styleUrls: ['./champions-maestry.component.css']
+  styleUrls: ['./champions-maestry.component.scss']
 })
 export class ChampionsMaestryComponent implements OnInit {
 

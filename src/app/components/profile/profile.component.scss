@@ -1,0 +1,206 @@
+.sectionProfile {
+    .profiles {
+        .profileAndHistory {
+            display: inline-flex;
+            width: 100%;
+            .sectionInformationProfile {
+            width: 383px;
+            height: 305px;
+            margin-top: 30px;
+            margin-left: 30px;
+            .faceInformation {
+                .profileIcon {
+                    position: relative;
+                    /* margin-top: 54px; */
+                    margin-left: 20px;  
+                    .borderImage {
+                        .profileImage {
+                            display: block;
+                            width: 100px;
+                            height: 100px;
+                            z-index: 1;
+                            text-align: center;
+                            margin-left: 9px;
+                            margin-top: 10px;
+                        }
+                        .level {
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            margin-top: -20px;
+                            margin-left: -22px;
+                            width: 44px;
+                            height: 24px;
+                            padding-top: 3px;
+                            box-sizing: border-box;
+                            background: url('http://opgg-static.akamaized.net/images/site/summoner/bg-levelbox.png');
+                            background-size: 100%;
+                            line-height: 17px;
+                            font-family: Helvetica,AppleSDGothic,"Apple SD Gothic Neo",AppleGothic,Arial,Tahoma;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #eabd56;
+                        }
+                    }
+                }
+            }
+            .titleProfile {
+                font-size: 18px;
+                font-weight: 500;
+                margin-left: 130px;
+            }
+            .division {
+                .divisionProfile {
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    .imgDivision {
+                        width: 133px;
+                        margin-left: 118px;
+                    }
+                    .windsAndLosses {
+                        display: block;
+                        position: absolute;
+                        top: 17px;
+                        right: 0;
+                        text-align: left;
+                        width: 107px;
+                        height: 89px;
+                        background-color: gainsboro !important;
+                    }
+                }
+            }
+            .flex {
+                .divisionFlex {
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    .imgFlex {
+                        width: 100px;
+                        position: absolute;
+                        left: 140px;
+                        top: 7px;
+                    }
+                    .windsAndLosses {
+                        display: block;
+                        position: absolute;
+                        top: 17px;
+                        right: 0;
+                        text-align: left;
+                        width: 107px;
+                        height: 89px;
+                        background-color: gainsboro !important;
+                    }
+                }
+            }
+            .sectionMmr {
+                position: relative;
+                display: block;
+                margin-top: -22px;
+                margin-left: 38px;
+                .mmr {
+
+                }
+            }
+            .sectionHistory {
+                position: relative;
+                display: block;
+                margin-top: 8px;
+                margin-left: 38px;
+                .history {
+
+                }
+            }
+            }
+            .sectionInformationHistory {
+                width: 69%;
+                /* padding-left: 3% !important; */
+                margin-left: 3%;
+                margin-top: 30px;
+                .history {
+                    .viewHistory {
+                        #iframeHistory {
+                            width: 100%;
+                            height: 100vh;
+                        }
+                    }
+                }
+            }
+        }
+        .sectionInformationMmr {
+            width: 383px;
+            height: 305px;
+            // margin-top: 30px;
+            margin-top: 0;
+            margin-left: 30px;
+            .mmr {
+                .viewMmr {
+                    #iframeMmr {
+                        width: 100%
+                    }
+                }
+            }
+        }
+    }
+}
+
+p {
+    background-image: none;
+}
+.profileLvL {
+    font-size: 21px;
+}
+.league {
+    /* background-image: url('../../../assets/images/icon_izn.png'); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: fixed;
+}
+.marcoDesignGeneral {
+    position: absolute;
+    left: -10px;
+    top: 2px;
+    width: 120px;
+    height: 120px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+.marcoImageBronze {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/bronze.png');
+}
+.marcoImageSilver {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/silver.png');
+}
+.marcoImageGold {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/gold.png');
+}
+.marcoImagePlatinum {
+    background-image: url('http://opgg-static.akamaized.net/images/borders2/platinum.png');
+}
+.TierRankImage{
+    position: relative;
+    display: block;
+    margin-left: 62%;
+    margin-top: -42px;
+}
+
+// Inicio Estilos MMR
+.l-header {
+    display: none !important;
+}
+// Fin Estilos MMR
+
+// Inicio Estilos MMR2
+
+#iframeMmr {
+    .MMRBox {
+        .Alert {
+            font-size: 3px;
+        }
+    }
+}
+.listasCabecera {
+    list-style-image: none;
+}
+// Fin Estilos MMR2

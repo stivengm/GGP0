@@ -5,11 +5,12 @@ import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
 
-  searchKey = '';
+  noNavbar = false; //Desaparecer Navbar. xdd
+  // searchKey = '';
   searchSummoner = '';
 
   constructor(private router: Router, private route: ActivatedRoute) {
@@ -17,6 +18,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     window.caches.delete;
+    // if (this.noNavbar = true) {
+    //   document.getElementById('navbarNav').style.display = 'none';
+    // }
   }
 
   searchSummonerName() {

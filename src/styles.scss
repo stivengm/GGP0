@@ -1,16 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     /* background-color: #ececec; */
-    background-image: url('./assets/images/bg.jpg');
+    background-color: #F9F9FA;
+    // background-image: url('./assets/images/bg.jpg');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.footerBot {
-    position: absolute;
-    /* bottom: 1%; */
-    text-align: center;
-    width: 100%;
 }
 
 /* Buttons */
@@ -32,6 +27,11 @@ body {
     margin-left: 62%;
     margin-top: -42px;
 }
+<<<<<<< HEAD:src/styles.css
 .top10px {
     margin-top: 10px;
+=======
+.dispNone {
+    display: none;
+>>>>>>> a418b20d6ac27ba11d8fb2fc7922364a02cce904:src/styles.scss
 }
