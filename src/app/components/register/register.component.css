@@ -1,0 +1,23 @@
+.sectionlogin {
+    position: relative;
+    margin-top: 6%;
+    left: 28%;
+    width: 40%;
+    height: auto;
+}
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+.formLoginAlg {
+    display: inline-flex;
+    width: 100%;
+}
+.btn-Login {
+    background-color: #343a40!important;
+    color: #ffffff;
+    position: relative;
+    /* left: 87%; */
+    margin-top: -6%;
+    left: 83%;
+}
