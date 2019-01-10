@@ -37,7 +37,7 @@ export class ProfileComponent implements OnInit {
     leagueName: "Malphite's Spellbreakers",
     playerOrTeamName: "XGameGamePlay0X",
     inactive: false,
-    rank: "V",
+    rank: "IV",
     freshBlood: false,
     leagueId: "34f3df20-03bd-11e8-bdba-c81f66cf1159",
     tier: "GOLD",
@@ -218,14 +218,10 @@ export class ProfileComponent implements OnInit {
       document.getElementById("sectionMmr").style.marginTop = '-105px';
     }
     // document.getElementById('iframeMmr').remove;
-    // document.getElementById('iframeMmr').style.display = 'none';
     // document.getElementById('sectionMmr').innerHTML = '<iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>';
-    // console.log("Hello world: " + document.getElementById('sectionMmr'));
     this.sectionMmr = `
     <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
     `;
-    var elemento = document.getElementById("introduccion");
-    elemento.className += 'helloWorld';
   }
 
 }
