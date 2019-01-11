@@ -206,17 +206,9 @@ export class ProfileComponent implements OnInit {
   history() {
     this.testMarginMMR = 1;
     this.sectionHistory = 'Hola mundo';
-    if (this.testMarginMMR == 1) {
-      document.getElementById("sectionMmr").style.position = 'relative';
-      document.getElementById("sectionMmr").style.marginTop = '-105px';
-    }
   }
 
   mmr() {
-    if (this.testMarginMMR == 1) {
-      document.getElementById("sectionMmr").style.position = 'relative';
-      document.getElementById("sectionMmr").style.marginTop = '-105px';
-    }
     // document.getElementById('iframeMmr').remove;
     // document.getElementById('sectionMmr').innerHTML = '<iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>';
     this.sectionMmr = `

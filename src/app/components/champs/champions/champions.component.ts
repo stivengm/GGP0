@@ -147,7 +147,7 @@ export class ChampionsComponent implements OnInit {
     {championsId: 'zilean', rolPrincipal: 'SUPP', RP: '', EA: ''},
     {championsId: 'zoe', rolPrincipal: 'MID', RP: '', EA: ''},
     {championsId: 'zyra', rolPrincipal: 'SUPP', RP: '', EA: ''},
-    {championsId: 'Neeko', rolPrincipal: 'MID', RP: '', EA: ''},
+    {championsId: 'neeko', rolPrincipal: 'MID', RP: '', EA: ''},
   ]
 
   constructor() { }
