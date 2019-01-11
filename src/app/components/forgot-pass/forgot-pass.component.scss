@@ -1,0 +1,29 @@
+.forgot {
+    .sectionForgot {
+        position: relative;
+        margin-top: 6%;
+        left: 28%;
+        width: 40%;
+        height: auto;
+        .titleHeader {
+            .title {
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+        .formForgot {
+            .formForgotAlg {
+                display: inline-flex;
+                width: 100%;
+            }
+        }
+        .btn-Forgot {
+            background-color: #343a40!important;
+            color: #ffffff;
+            position: relative;
+            /* left: 87%; */
+            margin-top: -6%;
+            left: 69%;
+        }
+    }
+}
