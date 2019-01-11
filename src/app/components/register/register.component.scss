@@ -1,0 +1,29 @@
+.register {
+    .sectionRegister {
+        position: relative;
+        margin-top: 6%;
+        left: 28%;
+        width: 40%;
+        height: auto;
+        .titleHeader {
+            .title {
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+        .formRegister {
+            .formRegisterAlg {
+                display: inline-flex;
+                width: 100%;
+            }
+        }
+        .btn-Register {
+            background-color: #343a40!important;
+            color: #ffffff;
+            position: relative;
+            /* left: 87%; */
+            margin-top: -6%;
+            left: 83%;
+        }
+    }
+}

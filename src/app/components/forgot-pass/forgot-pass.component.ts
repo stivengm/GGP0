@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forgot-pass.component.css']
 })
 export class ForgotPassComponent implements OnInit {
-
+  title = 'GGP0'
   constructor() { }
 
   ngOnInit() {

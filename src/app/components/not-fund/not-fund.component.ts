@@ -8,15 +8,12 @@ import { NotFundService } from '../../services/not-fund.service';
 })
 export class NotFundComponent implements OnInit {
 
-  deleteNavBar = false;
-
   urlNotFound: any;
   constructor(private nfService: NotFundService) { }
 
   ngOnInit() {
     // this.nfService.emit(true);
     this.urlNotFound = window.location
-    this.deleteNavBar = true;
     document.getElementById("body").style.backgroundImage = 'none';
     document.getElementById("footer").style.display = 'none';
     document.getElementById("navbarNav").style.display = 'none';
