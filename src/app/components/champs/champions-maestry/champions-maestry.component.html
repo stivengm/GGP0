@@ -2,14 +2,20 @@
   <section class="shampionsPlayer">
     <section class="sectionChampionMaestry shadow p-3 mb-5 bg-white rounded">
       <section class="champMaestryProfile">
-        <section class="campMaestry {{ championClassBG }}">
+        <!-- <section class="campMaestry {{ championClassBG }}" *ngFor="let champ of champs"> -->
+        <section class="campMaestry {{ champ }} {{ championClassBG }}" *ngFor="let champ of champs">
+          <section class="sectionChamp">
+            <img src="{{ marcoMaestry }}" class="imgMarco">
+            <!-- <img src="{{ championMaestry }}" class="imgChamp"> -->
+          </section>
+          <section class="PC">
+            <span class="spanPc">{{ championsMaestry.championPoints }}</span>
+          </section>
+        </section>
+        <!-- <section class="campMaestry {{ ashe }}" *ngFor="let champ of champs">
           <img src="{{ marcoMaestry }}" class="imgMarco">
           <img src="{{ championMaestry }}" class="imgChamp">
-        </section>
-        <section class="campMaestry {{ ashe }}" *ngFor="let champ of champs">
-          <img src="{{ marcoMaestry }}" class="imgMarco">
-          <img src="{{ championMaestry }}" class="imgChamp">
-        </section>
+        </section> -->
       </section>
     </section>
   </section>

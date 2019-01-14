@@ -1,24 +1,31 @@
-.campMaestry {
-    /* background-image: url('http://static.lolskill.net/img/champions/64/ashe.png'); */
-    background-position: 2px 0;
-    background-repeat: no-repeat;
-    background-size: 68px;
-}
-.sectionChampionMaestry {
-    width: 93%;
-    left: 3%;
-    display: block;
-    position: relative;
-    margin-top: 1%;
-    /* height: 100vh; */
-}
-.champMaestryProfile {
-    display: inline-flex;
-}
+// Importación de hoja de estilos CSS para campeones
+@import url("../../../../assets/estilosBGChamps/champs.scss");
 
-.vayne {
-    background-image: url('http://static.lolskill.net/img/champions/64/vayne.png')
-}
-.ashe {
-    background-image: url('http://static.lolskill.net/img/champions/64/ashe.png');
+
+.championsMaestry {
+    .shampionsPlayer {
+        .sectionChampionMaestry {
+            width: 93%;
+            left: 3%;
+            display: block;
+            position: relative;
+            margin-top: 1%;
+            /* height: 100vh; */
+            .champMaestryProfile {
+                display: inline-flex;
+                width: 100%;
+                flex-wrap: wrap!important;
+                justify-content: center!important;
+                .campMaestry {
+                    /* background-image: url('http://static.lolskill.net/img/champions/64/ashe.png'); */
+                    background-position: 2px 0;
+                    background-repeat: no-repeat;
+                    background-size: 68px;
+                    .PC {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
