@@ -1431,6 +1431,42 @@ export class ChampionsMaestryComponent implements OnInit {;
 
     this.TestArray.forEach(element => {
       // console.log(element);
+      if (element.championId == 1) {
+        element.championId = this.champs.push('annie');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 7) {
+        element.championId = this.champs.push('leblanc');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 17) {
+        element.championId = this.champs.push('');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 22) {
+        element.championId = this.champs.push('ashe');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 23) {
+        element.championId = this.champs.push('');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 24) {
+        element.championId = this.champs.push('jax');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 25) {
+        element.championId = this.champs.push('');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 53) {
+        element.championId = this.champs.push('');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 55) {
+        element.championId = this.champs.push('katarina');
+        this.championPoint = element.championPoints;
+      }
       if (element.championId == 64) {
         element.championId = this.champs.push('leesin');
         this.championPoint = element.championPoints;
@@ -1439,8 +1475,24 @@ export class ChampionsMaestryComponent implements OnInit {;
         element.championId = this.champs.push('vayne');
         this.championPoint = element.championPoints;
       }
+      if (element.championId == 133) {
+        element.championId = this.champs.push('quinn');
+        this.championPoint = element.championPoints;
+      }
       if (element.championId == 154) {
         element.championId = this.champs.push('zac');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 157) {
+        element.championId = this.champs.push('yasuo');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 202) {
+        element.championId = this.champs.push('jhin');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 245) {
+        element.championId = this.champs.push('ekko');
         this.championPoint = element.championPoints;
       }
       // console.log("Array Champs: " + this.champs)
