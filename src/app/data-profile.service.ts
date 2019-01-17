@@ -1,21 +1,32 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Post } from './dataProfile';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Profile } from './dataProfile';
+import { Mmr } from './Mmr';
+import { environment } from 'src/environments/environment';
 
 import { from } from 'rxjs';
+
+const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' })};
+
 @Injectable({
   providedIn: 'root'
 })
 export class DataProfileService {
 
-  key = 'RGAPI-7443ce23-81a8-436b-9bf4-04988f09fc74';
-
   constructor(private httpClient: HttpClient) {
     // console.log("Se cosumirá un servicio.");
   }
 
-  getData() {
-    return this.httpClient.get<{Post}>('http://lan.op.gg/summoner/ajax/mmr/summonerName=xgamegameplay0x');
+  getConfig() {
+    return this.httpClient.get<Profile>(environment.urlDataProfile, httpOptions);
   }
+
+  // getMmr() {
+  //   return this.httpClient.get<Mmr>(environment.urlMMR, httpOptions);
+  // }
+
+  // getData() {
+  //   return this.httpClient.get<{Post}>('http://lan.op.gg/summoner/ajax/mmr/summonerName=xgamegameplay0x');
+  // }
 
 }

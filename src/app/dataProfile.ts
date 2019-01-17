@@ -1,4 +1,4 @@
-export interface Post {
+export interface Profile {
     "profileIconId": number;
     "name": any;
     "summonerLevel": number;

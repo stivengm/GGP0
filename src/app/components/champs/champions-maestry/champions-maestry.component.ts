@@ -6,7 +6,7 @@ import { variable } from '@angular/compiler/src/output/output_ast';
   templateUrl: './champions-maestry.component.html',
   styleUrls: ['./champions-maestry.component.scss']
 })
-export class ChampionsMaestryComponent implements OnInit {;
+export class ChampionsMaestryComponent implements OnInit {
   championPoint: number;
   marcoMaestry = '';
   iconPlayer = '';
@@ -1440,7 +1440,7 @@ export class ChampionsMaestryComponent implements OnInit {;
         this.championPoint = element.championPoints;
       }
       if (element.championId == 17) {
-        element.championId = this.champs.push('');
+        element.championId = this.champs.push('teemo');
         this.championPoint = element.championPoints;
       }
       if (element.championId == 22) {
@@ -1448,7 +1448,7 @@ export class ChampionsMaestryComponent implements OnInit {;
         this.championPoint = element.championPoints;
       }
       if (element.championId == 23) {
-        element.championId = this.champs.push('');
+        element.championId = this.champs.push('tryndamere');
         this.championPoint = element.championPoints;
       }
       if (element.championId == 24) {
@@ -1456,11 +1456,11 @@ export class ChampionsMaestryComponent implements OnInit {;
         this.championPoint = element.championPoints;
       }
       if (element.championId == 25) {
-        element.championId = this.champs.push('');
+        element.championId = this.champs.push('morgana');
         this.championPoint = element.championPoints;
       }
       if (element.championId == 53) {
-        element.championId = this.champs.push('');
+        element.championId = this.champs.push('blitzcrank');
         this.championPoint = element.championPoints;
       }
       if (element.championId == 55) {

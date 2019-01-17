@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { element } from '@angular/core/src/render3/instructions';
+import { Profile } from 'src/app/dataProfile';
+import { DataProfileService } from 'src/app/data-profile.service';
+import { post } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-profile',
@@ -7,6 +10,8 @@ import { element } from '@angular/core/src/render3/instructions';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+  profile: Profile;
+
   sectionMmr = '';
   sectionHistory = '';
   testDeleteClass: any;
@@ -62,19 +67,41 @@ export class ProfileComponent implements OnInit {
 }
 
   profileConsumeExample = {
-    profileIconId: 1588,
-    name: "XGameGamePlay0X",
-    summonerLevel: 105,
-    accountId: 202220047,
-    id: 7643235,
-    revisionDate: 1539724335000
+    "profileIconId": 3379,
+    "name": "XGameGamePlay0X",
+    "puuid": "dkq7y-7rsgtrvnmyFuGq9emx4Dbg4q412O16SbqY855Fh4J0aSwPA63OC8IBAhlX-R8KlIjYcae82Q",
+    "summonerLevel": 106,
+    "accountId": "AtF7lBo9sIT9hbgnDJ9f-Pruy-Uwg3P9HKsO5hKeyA8f4_8",
+    "id": "Anff-N-IQVmc57c47bHkDYWEO5i5bAJ4_jM5g-U6h6H_ag",
+    "revisionDate": 1547203942000
+}
+
+
+
+  showProfile() {
+    this.dataProfileService.getConfig()
+      .subscribe(res => {
+        console.log(res);
+      },
+      err => {
+        console.log(err);
+      });
   }
 
-  constructor() {
+  // showMmr() {
+  //  this.dataProfileService.getMmr()
+  //   .subscribe(res => {
+  //     console.log("respuestaMMR: " + res)
+  //   })
+  // }
+
+
+  constructor(private dataProfileService: DataProfileService) {
     
   }
 
   ngOnInit() {
+    this.showProfile();
     this.profileMMR = this.urlMMR + this.profileConsumeExample.name
     // console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;
@@ -209,8 +236,6 @@ export class ProfileComponent implements OnInit {
   }
 
   mmr() {
-    // document.getElementById('iframeMmr').remove;
-    // document.getElementById('sectionMmr').innerHTML = '<iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>';
     this.sectionMmr = `
     <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
     `;
