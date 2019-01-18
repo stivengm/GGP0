@@ -29,6 +29,6 @@ export class NavbarComponent implements OnInit {
       }
     };
     this.router.navigate([], navigationExtras);
-    console.log("Username:" +this.searchSummoner);
+    console.log("Username: " + this.searchSummoner);
   }
 }

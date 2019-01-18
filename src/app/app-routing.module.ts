@@ -10,6 +10,7 @@ import { ChampionsMaestryComponent } from './components/champs/champions-maestry
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.component';
+import { HistoryChampsComponent } from './components/champs/history-champs/history-champs.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,10 @@ const routes: Routes = [
         path: 'champions',
         component: ChampionsComponent,
         pathMatch: 'full'
+      },
+      {
+        path: 'historyChampions',
+        component: HistoryChampsComponent,
       },
       {
         path: 'championsMaestry',

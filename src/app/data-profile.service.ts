@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 
 import { from } from 'rxjs';
 
-const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' })};
+const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': "*", 'Access-Control-Allow-Methods': "GET,POST,OPTIONS,DELETE,PUT" })};
 
 @Injectable({
   providedIn: 'root'
@@ -14,19 +14,18 @@ const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/js
 export class DataProfileService {
 
   constructor(private httpClient: HttpClient) {
-    // console.log("Se cosumirá un servicio.");
   }
 
-  getConfig() {
-    return this.httpClient.get<Profile>(environment.urlDataProfile, httpOptions);
-  }
+  // getConfig() {
+  //   return this.httpClient.get<Profile[]>(environment.urlDataProfile, httpOptions);
+  // }
 
   // getMmr() {
   //   return this.httpClient.get<Mmr>(environment.urlMMR, httpOptions);
   // }
 
   // getData() {
-  //   return this.httpClient.get<{Post}>('http://lan.op.gg/summoner/ajax/mmr/summonerName=xgamegameplay0x');
+  //   return this.httpClient.get<Post>('http://lan.op.gg/summoner/ajax/mmr/summonerName=xgamegameplay0x');
   // }
 
 }

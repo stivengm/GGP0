@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 // Services
 import { DataProfileService } from './data-profile.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NotFundService } from './services/not-fund.service';
+import { NotFundService } from './core/services/not-fund.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +26,7 @@ import { ChampionsMaestryComponent } from './components/champs/champions-maestry
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.component';
+import { HistoryChampsComponent } from './components/champs/history-champs/history-champs.component';
 // import { NotFoundService } from './services/not-found.service';
 
 
@@ -43,7 +44,8 @@ import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.compon
     ChampionsMaestryComponent,
     LoginComponent,
     RegisterComponent,
-    ForgotPassComponent
+    ForgotPassComponent,
+    HistoryChampsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 // import { DataProfileService } from './data-profile.service';
-import { NotFundService } from './services/not-fund.service';
+import { NotFundService } from './core/services/not-fund.service';
 
 
 @Component({

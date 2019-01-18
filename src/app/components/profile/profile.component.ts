@@ -2,7 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { element } from '@angular/core/src/render3/instructions';
 import { Profile } from 'src/app/dataProfile';
 import { DataProfileService } from 'src/app/data-profile.service';
-import { post } from 'selenium-webdriver/http';
+import { TestPostService } from '../../core/services/test-post.service';
+import { NavbarComponent } from '../../Layout/navbar/navbar.component';
 
 @Component({
   selector: 'app-profile',
@@ -21,6 +22,7 @@ export class ProfileComponent implements OnInit {
   bgMarco = ''
 
   @Input() nameSummoner: any;
+  @Input() public navbarComp: NavbarComponent; 
   searchKey = '';
   profileMMR: any;
   urlMMR = 'http://lan.op.gg/summoner/ajax/mmr/summonerName='
@@ -64,7 +66,7 @@ export class ProfileComponent implements OnInit {
     leagueId: "b9cf3850-fdb6-11e7-a79b-d4ae52a6fefd",
     tier: "SILVER",
     leaguePoints: 0
-}
+  }
 
   profileConsumeExample = {
     "profileIconId": 3379,
@@ -74,19 +76,19 @@ export class ProfileComponent implements OnInit {
     "accountId": "AtF7lBo9sIT9hbgnDJ9f-Pruy-Uwg3P9HKsO5hKeyA8f4_8",
     "id": "Anff-N-IQVmc57c47bHkDYWEO5i5bAJ4_jM5g-U6h6H_ag",
     "revisionDate": 1547203942000
-}
-
-
-
-  showProfile() {
-    this.dataProfileService.getConfig()
-      .subscribe(res => {
-        console.log(res);
-      },
-      err => {
-        console.log(err);
-      });
   }
+
+
+
+  // showProfile() {
+  //   this.dataProfileService.getConfig()
+  //     .subscribe(res => {
+  //       console.log(res);
+  //     },
+  //     err => {
+  //       console.log(err);
+  //     });
+  // }
 
   // showMmr() {
   //  this.dataProfileService.getMmr()
@@ -96,12 +98,17 @@ export class ProfileComponent implements OnInit {
   // }
 
 
-  constructor(private dataProfileService: DataProfileService) {
-    
+  constructor(private dataProfileService: DataProfileService, private testPostService:TestPostService) {
+    this.testPostService.getData()
+      .subscribe(res => {
+        console.log(res);
+      },
+      err => {
+        console.log(err);
+      })
   }
 
   ngOnInit() {
-    this.showProfile();
     this.profileMMR = this.urlMMR + this.profileConsumeExample.name
     // console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NotFundService } from '../../services/not-fund.service';
+import { NotFundService } from '../../core/services/not-fund.service';
 
 @Component({
   selector: 'app-not-fund',
