@@ -1433,10 +1433,20 @@ export class ChampionsMaestryComponent implements OnInit {
       // console.log(element);
       if (element.championId == 1) {
         element.championId = this.champs.push('annie');
+        this.arrayPuntage.push(element.championPoints);
         this.championPoint = element.championPoints;
       }
       if (element.championId == 7) {
         element.championId = this.champs.push('leblanc');
+        this.arrayPuntage.push(element.championPoints);
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 11) {
+        element.championId = this.champs.push('akali');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 12) {
+        element.championId = this.champs.push('masteryi');
         this.championPoint = element.championPoints;
       }
       if (element.championId == 17) {
@@ -1459,6 +1469,14 @@ export class ChampionsMaestryComponent implements OnInit {
         element.championId = this.champs.push('morgana');
         this.championPoint = element.championPoints;
       }
+      if (element.championId == 32) {
+        element.championId = this.champs.push('leona ');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 36) {
+        element.championId = this.champs.push('jinx');
+        this.championPoint = element.championPoints;
+      }
       if (element.championId == 53) {
         element.championId = this.champs.push('blitzcrank');
         this.championPoint = element.championPoints;
@@ -1473,6 +1491,22 @@ export class ChampionsMaestryComponent implements OnInit {
       }
       if (element.championId == 67) {
         element.championId = this.champs.push('vayne');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 84) {
+        element.championId = this.champs.push('morgana');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 86) {
+        element.championId = this.champs.push('rengar');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 89) {
+        element.championId = this.champs.push('garen');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 107) {
+        element.championId = this.champs.push('drmundo');
         this.championPoint = element.championPoints;
       }
       if (element.championId == 133) {
@@ -1491,8 +1525,20 @@ export class ChampionsMaestryComponent implements OnInit {
         element.championId = this.champs.push('jhin');
         this.championPoint = element.championPoints;
       }
+      if (element.championId == 222) {
+        element.championId = this.champs.push('ivern');
+        this.championPoint = element.championPoints;
+      }
       if (element.championId == 245) {
         element.championId = this.champs.push('ekko');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 412) {
+        element.championId = this.champs.push('amumu');
+        this.championPoint = element.championPoints;
+      }
+      if (element.championId == 427) {
+        element.championId = this.champs.push('alistar');
         this.championPoint = element.championPoints;
       }
       // console.log("Array Champs: " + this.champs)
