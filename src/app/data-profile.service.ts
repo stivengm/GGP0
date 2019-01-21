@@ -25,7 +25,7 @@ export class DataProfileService {
   // }
 
   // getData() {
-  //   return this.httpClient.get<Post>('http://lan.op.gg/summoner/ajax/mmr/summonerName=xgamegameplay0x');
+  //   return this.httpClient.get<Post[]>('http://lan.op.gg/summoner/ajax/mmr/summonerName=xgamegameplay0x');
   // }
 
 }
