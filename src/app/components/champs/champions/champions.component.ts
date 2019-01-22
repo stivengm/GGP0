@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-champions',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./champions.component.scss']
 })
 export class ChampionsComponent implements OnInit {
-
+  testInnerHTML = "";
   champions = [
     {championsId: 'aatrox', rolPrincipal: 'TOP', RP: '975', EA: '6300'},
     {championsId: 'ahri', rolPrincipal: 'MID', RP: '880', EA: '4800'},
@@ -153,9 +154,7 @@ export class ChampionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    document.getElementById('championIdRouter');
-    console.log('aRouter: ' + document.getElementById('championIdRouter'));
-    console.log('aClassRouter: ' + document.getElementsByClassName('championIdRouter'));
+    this.testInnerHTML = "<div class='Hola'>Hola Mundo.</div>";
   }
 
 }

@@ -1,3 +1,11 @@
 <section class="sectionHistoryChamps shadow p-3 mb-5 bg-white rounded">
-  
+    <section class="historyChampions shadow p-3 mb-5 bg-white rounded" *ngFor="let champion of champions">
+        <section class="champ {{ champion.championsId }}">
+            <span>&nbsp;</span>
+            <span>{{ testName.nameChampion }}</span>
+        </section>
+        <section class="history">
+            <span>{{ champion.history }}</span>
+        </section>
+    </section>
 </section>

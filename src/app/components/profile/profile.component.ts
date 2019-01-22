@@ -243,9 +243,7 @@ export class ProfileComponent implements OnInit {
   }
 
   mmr() {
-    this.sectionMmr = `
-    <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe>
-    `;
+    this.sectionMmr = '<iframe id="iframeMmr" src="http://lan.op.gg/summoner/ajax/mmr/summonerName=Dissentient" frameborder="0"></iframe>';
   }
 
 }

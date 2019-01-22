@@ -1,0 +1,19 @@
+// Importación de hoja de estilos CSS para campeones
+@import url("../../../../assets/estilosBGChamps/champs.scss");
+
+.sectionHistoryChamps {
+    margin: 27px 3% 0 3%;
+    box-shadow: 0 .9rem 1rem rgba(0,0,0,.19) !important;
+    .historyChampions {
+        display: inline-flex;
+        width: 100%;
+        .champ {
+            background-repeat: no-repeat;
+            height: 64px;
+            width: 65px;
+        }
+        .history {
+            padding-left: 31px;
+        }
+    }
+}

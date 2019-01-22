@@ -49,11 +49,7 @@
         </section>
         <section class="sectionInformationMmr shadow p-3 mb-5 bg-white rounded" id="sectionMmr" *ngIf="sectionMmr">
           <section class="mmr">
-            <section class="viewMmr">
-              <!-- {{ sectionMmr }} -->
-              <!-- <iframe src="http://lan.op.gg/summoner/ajax/mmr/summonerName=XGameGamePlay0X" class="iframeMmr"></iframe> -->
-              <iframe id="iframeMmr" src="http://lan.op.gg/summoner/ajax/mmr/summonerName=Dissentient" frameborder="0"></iframe>
-              <!-- <object type="text/html" id="sectionMmr" data="http://www.lapaginaquesea.com" width="100%" height="100%"></object> -->
+            <section class="viewMmr" *ngIf="sectionMmr" [innerHTML]="sectionMmr">
             </section>
           </section>
         </section>
