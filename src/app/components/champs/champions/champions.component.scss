@@ -1,3 +1,6 @@
+// Importación de hoja de estilos CSS para campeones
+@import url("../../../../assets/estilosBGChamps/champs.scss");
+
 .champs {
     margin: 2% 2% 0 2%;
 }
@@ -5,7 +8,6 @@
     width: 64px;
     height: 64px;
     margin-top: 27px;
-    /* display: inline-flex; */
 }
 .sectionChampAndHistory {
     background-color: gainsboro !important;

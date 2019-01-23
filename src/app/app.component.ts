@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { DataProfileService } from './data-profile.service';
 import { NotFundService } from './core/services/not-fund.service';
 
 
@@ -12,17 +11,10 @@ export class AppComponent {
   title = 'GGP0';
   isNotfound = false;
 
-  constructor (//private dataProfileService: DataProfileService,
-    private nfService: NotFundService) {
-    // this.dataProfileService.getData().subscribe(data => {
-      // data
-      // console.log("holamundo:" + data);
-    // });
+  constructor (private nfService: NotFundService) {
   }
 
   ngOnInit() {
   }
-
-  posts = {};
 
 }

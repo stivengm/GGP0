@@ -156,11 +156,8 @@ export class HistoryChampsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.cadenaPrueba = this.cadenaPrueba.toUpperCase();
-    // console.log(this.cadenaPrueba);
     for (let i = 0; i < this.champions.length; i++) {
       const element = this.champions[i].championsId;
-      // this.testName = element.toUpperCase();
       this.testName.push("{ nameChampion: " + element.toUpperCase() + " }");
     }
   console.log(this.testName);

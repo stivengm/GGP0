@@ -1424,13 +1424,7 @@ export class ChampionsMaestryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.TestArray.forEach(elementPoints => {
-    //   this.arrayPuntage.push(elementPoints.championPoints);
-    //   console.log(this.arrayPuntage);
-    // });
-
     this.TestArray.forEach(element => {
-      // console.log(element);
       if (element.championId == 1) {
         element.championId = this.champs.push('annie');
         this.arrayPuntage.push(element.championPoints);
@@ -1541,14 +1535,8 @@ export class ChampionsMaestryComponent implements OnInit {
         element.championId = this.champs.push('alistar');
         this.championPoint = element.championPoints;
       }
-      // console.log("Array Champs: " + this.champs)
     });
-
-
-
-    // console.log("Prueba: "+ this.TestArray[0].chestGranted);
     this.marcoMaestry = 'http://static.lolskill.net/img/championmastery/border/' + this.championsMaestry.championLevel + '.png';
-
     // If marcos según maestría
     if (this.championsMaestry.championLevel == 7) {
       this.marcoMaestry == 'http://static.lolskill.net/img/championmastery/border/7.png';

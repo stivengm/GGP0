@@ -8,18 +8,12 @@ import { ProfileComponent } from '../../components/profile/profile.component';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  noNavbar = false; //Desaparecer Navbar. xdd
-  // searchKey = '';
   searchSummoner = '';
 
   constructor(private router: Router, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    window.caches.delete;
-    // if (this.noNavbar = true) {
-    //   document.getElementById('navbarNav').style.display = 'none';
-    // }
   }
 
   searchSummonerName() {

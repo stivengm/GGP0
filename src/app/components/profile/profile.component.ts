@@ -110,7 +110,6 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.profileMMR = this.urlMMR + this.profileConsumeExample.name
-    // console.log(this.profileMMR);
     this.nameProfile = this.profileConsumeExample.name;
     this.lvlProfile = this.profileConsumeExample.summonerLevel;
     // MARCO IMAGE!

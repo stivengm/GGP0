@@ -7,13 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  deleteFooter = false; //Desaparecer Footer. xdd
   constructor() { }
 
   ngOnInit() {
-    // if (this.deleteFooter = true) {
-    //   document.getElementById('footer').style.display = 'none';
-    // }
   }
 
 }
