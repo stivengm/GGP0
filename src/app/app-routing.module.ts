@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.component';
 import { HistoryChampsComponent } from './components/champs/history-champs/history-champs.component';
+import { ProfileChampionsComponent } from './components/champs/profile-champions/profile-champions.component'
 
 
 const routes: Routes = [
@@ -56,6 +57,10 @@ const routes: Routes = [
         path: 'championsMaestry',
         component: ChampionsMaestryComponent,
       },
+      {
+        path: 'profileChampions',
+        component: ProfileChampionsComponent,
+      }
     ]
   },
   {

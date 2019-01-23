@@ -1,17 +1,44 @@
 // Importación de hoja de estilos CSS para campeones
 @import url("../../../../assets/estilosBGChamps/champs.scss");
+@import url("../../../../assets/estilosBGChamps/habilitiesChampions.scss");
 
 .champs {
     margin: 2% 2% 0 2%;
 }
 .champion{
-    width: 64px;
+    width: 70px;
     height: 64px;
     margin-top: 27px;
 }
+.allChamps {
+    background-color: #0f0713 !important;
+}
+.champs {
+    background-color: #0f0713 !important;
+    border: 1px solid #2e2734;
+}
 .sectionChampAndHistory {
-    background-color: gainsboro !important;
+    // background-color: gainsboro !important;
+    background-color: #0f0713 !important;
+    border: 1px solid #2e2734;
     /* background-image: url('http://static.lolskill.net/img/skins/tablerow/Aatrox_0.jpg'); */
+}
+
+.profileChampionsDisplayFlex {
+    display: flex;
+    width: 100%;
+}
+.historyChamp {
+    padding-left: 3%
+}
+.habilidadContent {
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+}
+.sectionHabilities {
+    background-color: #0f0713 !important;
+    border: 1px solid #2e2734;
 }
 
 

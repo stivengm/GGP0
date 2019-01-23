@@ -1,0 +1,175 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-profile-champions',
+  templateUrl: './profile-champions.component.html',
+  styleUrls: ['./profile-champions.component.scss']
+})
+export class ProfileChampionsComponent implements OnInit {
+  url: any;
+  ImgChamp = '';
+  championImgChamp = [
+    'aatrox',
+    'ahri',
+    'akali',
+    'alistar',
+    'amumu',
+    'anivia',
+    'annie',
+    'ashe',
+    'aurelionsol',
+    'azir',
+    'brand',
+    'braum',
+    'caitlyn',
+    'camile',
+    'cassiopeia',
+    'chogath',
+    'corki',
+    'darius',
+    'diana',
+    'drmundo',
+    'draven',
+    'ekko',
+    'elise',
+    'evelynn',
+    'ezreal',
+    'fiddlesticks',
+    'fiora',
+    'fizz',
+    'galio',
+    'gangplank',
+    'garen',
+    'gnar',
+    'gragas',
+    'graves',
+    'hecarim',
+    'heimerdinger',
+    'illaoi',
+    'irelia',
+    'ivern',
+    'janna',
+    'jarvaniv',
+    'jax',
+    'jayce',
+    'jhin',
+    'jinx',
+    'kaisa',
+    'kalista',
+    'karma',
+    'karthus',
+    'kassadin',
+    'katarina',
+    'kayle',
+    'kayn',
+    'kennen',
+    'khazix',
+    'kindred',
+    'kled',
+    'kogmaw',
+    'leblanc',
+    'leesin',
+    'leona',
+    'lissandra',
+    'lucian',
+    'lulu',
+    'lux',
+    'malphite',
+    'malzahar',
+    'maokai',
+    'masteryi',
+    'missfortune',
+    'mordekaiser',
+    'morgana',
+    'nami',
+    'nasus',
+    'nautilus',
+    'nidalee',
+    'nocturne',
+    'nunu',
+    'olaf',
+    'oriana',
+    'ornn',
+    'pantheon',
+    'poppy',
+    'pyke',
+    'quinn',
+    'rakan',
+    'rammus',
+    'reksay',
+    'renekton',
+    'rengar',
+    'riven',
+    'rumble',
+    'ryze',
+    'sejuani',
+    'shaco',
+    'shen',
+    'shyvana',
+    'singed',
+    'sion',
+    'sivir',
+    'skarner',
+    'sona',
+    'soraka',
+    'swain',
+    'syndra',
+    'tahmkench',
+    'taliyah',
+    'talon',
+    'taric',
+    'teemo',
+    'thresh',
+    'tristana',
+    'trundle',
+    'tryndamere',
+    'twistedfate',
+    'twitch',
+    'udyr',
+    'urgot',
+    'varus',
+    'vayne',
+    'veigar',
+    'velkoz',
+    'vi',
+    'viktor',
+    'vladimir',
+    'volibear',
+    'warwick',
+    'wukong',
+    'xayah',
+    'xerath',
+    'xinzhao',
+    'yasuo',
+    'yoric',
+    'zac',
+    'zed',
+    'ziggs',
+    'zilean',
+    'zoe',
+    'zyra',
+    'neeko'
+  ]
+
+  constructor() { }
+
+  ngOnInit() {
+    for (let i = 0; i < this.championImgChamp.length; i++) {
+      const element = this.championImgChamp[i];
+      var imagenTest = element;
+      console.log(imagenTest);
+    }
+    this.championImgChamp.forEach(element => {
+      console.log(element);
+      if (this.championImgChamp[element] == 'aatrox') {
+        this.ImgChamp = element;
+        this.url = ''
+      }
+      if (this.championImgChamp[element] == 'ahri') {
+        this.ImgChamp = element;
+        this.ImgChamp
+      }
+    });
+  }
+
+}

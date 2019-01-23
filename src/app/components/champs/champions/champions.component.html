@@ -1,6 +1,7 @@
 <section class="champions">
   <section class="champs shadow p-3 mb-5 bg-white rounded">
-    <section class="allChamps">
+    <section class="allChamps" id="sectionChampions">
+      <a (click)="goProfile()">
         <section class="sectionChampAndHistory shadow p-3 mb-5 bg-white rounded" *ngFor="let champion of champions">
           <section class="champsWithHistory">
             <section class="champion">
@@ -13,6 +14,30 @@
             </section>
           </section>
         </section>
+      </a>
+    </section>
+    <section class="profileChampions" id="sectionProfileChampions">
+      <section class="sectionChampAndHistory shadow p-3 mb-5 bg-white rounded">
+        <section class="profileChampionsDisplayFlex">
+          <section class="champion">
+            <section class="{{ ChampionProfile }} "></section>
+          </section>
+          <section class="aboutChampion historyChamp">
+            <h4><strong>Hostoria:</strong></h4>
+            {{ History }}
+          </section>
+        </section>
+        <section class="sectionHabilities shadow p-3 mb-5 bg-white rounded">
+          <section class="profileChampionsDisplayFlex">
+            <section class="habilidadContent {{ passive }}"></section>
+            <section class="habilidadContent {{ habilidadQ }}"></section>
+            <section class="habilidadContent {{ habilidadW }}"></section>
+            <section class="habilidadContent {{ habilidadE }}"></section>
+            <section class="habilidadContent {{ habilidadR }}"></section>
+          </section>
+        </section>
+      </section>
+      <button type="button" class="btn btn-dark" (click)="back()">Regresar</button>
     </section>
   </section>
 </section>
