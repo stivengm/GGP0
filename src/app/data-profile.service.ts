@@ -20,9 +20,9 @@ export class DataProfileService {
   //   return this.httpClient.get<Profile[]>(environment.urlDataProfile, httpOptions);
   // }
 
-  // getMmr() {
-  //   return this.httpClient.get<Mmr>(environment.urlMMR, httpOptions);
-  // }
+  getMmr() {
+    return this.httpClient.get<Mmr>(environment.urlMMR, httpOptions);
+  }
 
   // getData() {
   //   return this.httpClient.get<Post[]>('http://lan.op.gg/summoner/ajax/mmr/summonerName=xgamegameplay0x');
